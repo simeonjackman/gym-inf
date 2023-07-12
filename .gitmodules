@@ -1,0 +1,3 @@
+[submodule "src/sites/old-gym-inf"]
+	path = src/sites/old-gym-inf
+	url = https://github.com/cedricgeissmann/gym-inf
