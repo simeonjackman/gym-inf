@@ -41,20 +41,3 @@ body {
   border-left: 5px solid grey;
   padding-left: 20px;
 }
-
-pre {
-  display: inline;
-}
-
-code > pre {
-  display: block;
-}
-
-code {
-  display: block;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin: 15px auto;
-  width: max(80em, 70%);
-}
