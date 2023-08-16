@@ -1,4 +1,4 @@
-import Video from "../../Video"
+import Video from "../../components/Video"
 
 export default function ChapterInstallation() {
 
