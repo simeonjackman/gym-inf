@@ -1,11 +1,10 @@
+import Chapter from "../../components/Chapter"
 import Video from "../../components/Video"
 
 export default function ChapterInstallation() {
 
-  window.location.hash = "#installation"
-
   return (
-    <>
+    <Chapter hash={"installation"}>
       <h2>Installation</h2>
       <section>
         <p>
@@ -72,6 +71,6 @@ export default function ChapterInstallation() {
           Was Sie alles in Webseiten einbinden können, finden Sie hier: <a href="#html">Webseiten</a>.
         </p>
       </section>
-    </>
+    </Chapter>
   )
 }

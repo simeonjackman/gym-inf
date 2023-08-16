@@ -1,10 +1,11 @@
+import Chapter from "../../components/Chapter";
 import Code from "../../components/Code";
 import ICode from "../../components/ICode";
 import Tag from "../../components/Tag";
 
 export default function ChapterHTML() {
   return (
-    <>
+    <Chapter hash={"html"}>
       <h2>Webseiten</h2>
       <section>
         Eine Webseite ist ein Dokument das von Ihrem Webbrowser dargestellt wird. Die Strukturierung des Dokuments wird mit <b>HTML</b> gemacht. Dies ist eine einfache Art dem Computer zu sagen welche Teile zusammen gehören, und von welchem Typ diese Teile sind.
@@ -54,6 +55,6 @@ export default function ChapterHTML() {
             <img src='https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80' width='500px' />
         </Code>
       </section>
-    </>
+    </Chapter>
   )
 }
