@@ -1,4 +1,5 @@
 import Chapter from "../../components/Chapter"
+import Example from "../../components/Example"
 import Video from "../../components/Video"
 
 export default function ChapterInstallation() {
@@ -22,7 +23,9 @@ export default function ChapterInstallation() {
             <a href="https://www.google.com/chrome/">Chrome</a> (Webbrowser)
           </li>
         </ol>
-        <p className="auftrag">Installieren Sie die Programme über die jeweiligen Links.</p>
+        <Example title="Auftrag">
+          Installieren Sie die Programme über die jeweiligen Links.
+        </Example>
       </section>
 
       <section>
@@ -63,13 +66,14 @@ export default function ChapterInstallation() {
       </section>
 
       <section>
-        <h3>Auftrag: Eigene Webseite erstellen</h3>
+        <Example title="Auftrag: Eigene Webseite erstellen">
         <p>
           Wenn Ihr Setup funktioniert, erweitern Sie das Projekt so, das Sie eine eigene Webseite erstellen. Erstellen Sie jedes mal eine neue Version/Commit, wenn Sie eine Änderung gemacht haben, mit der Sie zufrieden sind.
         </p>
         <p>
           Was Sie alles in Webseiten einbinden können, finden Sie hier: <a href="#html">Webseiten</a>.
         </p>
+        </Example>
       </section>
     </Chapter>
   )
