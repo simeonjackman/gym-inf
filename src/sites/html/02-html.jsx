@@ -36,7 +36,7 @@ export default function ChapterHTML() {
         <h3>Listen</h3>
         <p>
 
-        In <b>HTML</b> gibt es zwei Arten von Listen. Ungeordnete Listen <Tag>ul</Tag> und geordnete Listen <Tag>ul</Tag>. Innerhalb einer Liste ist jedes Element ein Listeneintrag. Der folgende Code erstellt Ihnen eine Liste.
+        In <b>HTML</b> gibt es zwei Arten von Listen. Ungeordnete Listen <Tag>ul</Tag> und geordnete Listen <Tag>ol</Tag>. Innerhalb einer Liste ist jedes Element ein Listeneintrag. Der folgende Code erstellt Ihnen eine Liste.
         </p>
         <Code>
           <ul>
