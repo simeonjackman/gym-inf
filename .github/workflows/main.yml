@@ -28,8 +28,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo and submodules
         uses: actions/checkout@v3
+        with:
+          submodules: recursive
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
