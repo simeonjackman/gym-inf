@@ -14,6 +14,30 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#root {
+  height: 100%;
+  overflow-y: scroll;
+}
+
 body {
   margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#root main {
+  margin: 0 auto;
+  width: max(70vw, 640px);
+}
+
+.auftrag::before {
+  content: "Auftrag";
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+}
+
+.auftrag {
+  border-left: 5px solid grey;
+  padding-left: 20px;
 }

@@ -7,4 +7,6 @@ export default defineConfig({
   build: {
     outDir: 'docs',
   },
+  base: "/gym-inf/",
+  // assetsInclude: ["**/*.html"]
 })
