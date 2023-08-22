@@ -7,6 +7,8 @@ export default function ChapterIndex() {
       <ol>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#html">Webseiten</a></li>
+        <li><a href="#html-elements">Webseiten strukturieren</a></li>
+        <li><a href="#html-attributes">HTML Attribute</a></li>
       </ol>
     </>
   )

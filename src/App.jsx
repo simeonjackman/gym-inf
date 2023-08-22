@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import ChapterIndex from './sites/html/00-index'
 import ChapterInstallation from './sites/html/01-installation'
+import ChapterHTMLElements from './sites/html/02-1-html-elements'
+import ChapterHTMLAttributes from './sites/html/02-2-html-attributes'
 import ChapterHTML from './sites/html/02-html'
 // import index from './sites/old-gym-inf/docs/index.html'
 
@@ -19,6 +21,10 @@ function App() {
       return <ChapterInstallation />
     } else if ( chap === "html") {
       return <ChapterHTML />
+    } else if ( chap === "html-elements") {
+      return <ChapterHTMLElements />
+    } else if ( chap === "html-attributes") {
+      return <ChapterHTMLAttributes />
     } else {
       return <ChapterIndex />
     }
