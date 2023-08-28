@@ -32,7 +32,10 @@ function App() {
 
   return (
     <>
-      <h1>Gym Informatik</h1>
+      <h1>
+        <a href="#index">Gym Informatik</a>
+        <span className="back"><a href="#index">Home</a></span>
+      </h1>
       <main>
         { getChapter(location) }
       </main>
