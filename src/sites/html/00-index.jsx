@@ -24,6 +24,7 @@ export default function ChapterIndex() {
             <li><a href="#css">Elemente gestalten</a></li>
             <li><a href="#css-selectors">CSS Selektoren</a></li>
             <li><a href="#css-box-model">CSS Box Modell</a></li>
+            <li><a href="#css-animations">CSS Animationen</a></li>
           </ol>
         </li>
       </ol>

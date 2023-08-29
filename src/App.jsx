@@ -8,6 +8,7 @@ import ChapterHTML from './sites/html/02-html'
 import ChapterCSS from './sites/html/03-css'
 import ChapterCSSSelectors from './sites/html/03-2-css-box-model'
 import ChapterCSSBoxModel from './sites/html/03-2-css-box-model'
+import ChapterCSSAnimations from './sites/html/03-3-css-animationen'
 // import index from './sites/old-gym-inf/docs/index.html'
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
       return <ChapterCSSSelectors />
     } else if ( chap === "css-box-model") {
       return <ChapterCSSBoxModel />
+    } else if ( chap === "css-animations") {
+      return <ChapterCSSAnimations />
     } else {
       return <ChapterIndex />
     }
