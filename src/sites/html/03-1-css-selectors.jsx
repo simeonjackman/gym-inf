@@ -82,7 +82,7 @@ export default function ChapterCSSSelectors() {
           ></LCode>
           Sie können das <ICode>:hover</ICode> zu jedem Element dass Sie hervorheben möchten hinzufügen.
         </Example>
-        <p>Pseudo-Klassen beginnen jeweils mit einem <ICode>:</ICode>, wie zum Beispiel <LCode>:visited</LCode>.</p>
+        <p>Pseudo-Klassen beginnen jeweils mit einem <ICode>:</ICode>, wie zum Beispiel <ICode>:visited</ICode>.</p>
         <Example title="Aufgabe: Besuchte Links verstecken">
           Normalerweise sind Links die Sie bereits besucht haben einfach violet. Versuchen Sie 
           mit der Pseudo-Klasse <ICode>:visited</ICode> einen Link zu verstecken.
