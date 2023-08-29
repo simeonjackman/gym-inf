@@ -28,7 +28,21 @@ export default function ChapterCSSAnimations() {
         Erstellen Sie eine <ICode>transition</ICode>, die ein Element rotieren lässt. Eine Rotation können Sie mit <ICode>transform: rotate(90deg)</ICode> erreichen.
       </Example>
       </section>
-      
+      <section>
+        <h3>Animationen</h3>
+        Eine fortgeschrittenere Variante sind Animationen. Aber auch diese sind sehr einfach zu erreichen mit CSS.
+        <Example title="Beispiel">
+          Sie können ganz einfach ein pulsierendes Element erstellen, wenn Sie ein Element vergrössern und wieder verkleinern. Der folgende Code macht das für alle Elemente mit der Klasse <ICode>.scale</ICode>.
+          <LCode content={`.scale {
+  animation: scale-anim 1s both ease-in-out infinite alternate;
+}
+
+@keyframes scale-anim {
+  from {transform: scale(1)}
+  to {transform: scale(1.5)}
+}`}></LCode>
+        </Example>
+      </section>
     </Chapter>
   )
 }
