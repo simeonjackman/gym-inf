@@ -18,6 +18,12 @@ export default function ChapterIndex() {
             <li><a href="#html-attributes">HTML Attribute</a></li>
           </ol>
         </li>
+        <li>
+          CSS
+          <ol>
+            <li><a href="#css">Elemente gestalten</a></li>
+          </ol>
+        </li>
       </ol>
     </>
   )
