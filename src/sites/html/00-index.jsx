@@ -1,36 +1,36 @@
-export default function ChapterIndex() {
+import {Link} from "react-router-dom"
 
-  window.location.hash = "#index"
+export default function ChapterIndex() {
 
   return (
     <>
       <ol>
         <li>Einführung
           <ol>
-            <li><a href="#installation">Installation</a></li>
+            <li><Link to="install">Installation</Link></li>
           </ol>
         </li>
         <li>
           HTML
           <ol>
-            <li><a href="#html">Webseiten</a></li>
-            <li><a href="#html-elements">Webseiten strukturieren</a></li>
-            <li><a href="#html-attributes">HTML Attribute</a></li>
+            <li><Link to="html">Webseiten</Link></li>
+            <li><Link to="html-elements">Webseiten strukturieren</Link></li>
+            <li><Link to="html-attributes">HTML Attribute</Link></li>
           </ol>
         </li>
         <li>
           CSS
           <ol>
-            <li><a href="#css">Elemente gestalten</a></li>
-            <li><a href="#css-selectors">CSS Selektoren</a></li>
-            <li><a href="#css-box-model">CSS Box Modell</a></li>
-            <li><a href="#css-animations">CSS Animationen</a></li>
+            <li><Link to="css">Elemente gestalten</Link></li>
+            <li><Link to="css-selectors">CSS Selektoren</Link></li>
+            <li><Link to="css-box-model">CSS Box Modell</Link></li>
+            <li><Link to="css-animations">CSS Animationen</Link></li>
           </ol>
         </li>
         <li>
           Git
           <ol>
-            <li><a href="#git">Versionskontrolle</a></li>
+            <li><Link to="git">Versionskontrolle</Link></li>
           </ol>
         </li>
       </ol>
