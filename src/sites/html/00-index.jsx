@@ -27,6 +27,12 @@ export default function ChapterIndex() {
             <li><a href="#css-animations">CSS Animationen</a></li>
           </ol>
         </li>
+        <li>
+          Git
+          <ol>
+            <li><a href="#git">Versionskontrolle</a></li>
+          </ol>
+        </li>
       </ol>
     </>
   )
