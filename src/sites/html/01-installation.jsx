@@ -1,11 +1,16 @@
+import { useEffect } from "react"
 import Chapter from "../../components/Chapter"
 import Example from "../../components/Example"
 import Video from "../../components/Video"
 
 export default function ChapterInstallation() {
 
+  useEffect(() => {
+    console.log("install")
+  }, [])
+
   return (
-    <Chapter hash={"installation"}>
+    <>
       <h2>Installation</h2>
       <section>
         <p>
@@ -75,6 +80,6 @@ export default function ChapterInstallation() {
         </p>
         </Example>
       </section>
-    </Chapter>
+    </>
   )
 }
