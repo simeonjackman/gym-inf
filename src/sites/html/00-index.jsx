@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"
+import ICode from "../../components/ICode"
 
 export default function ChapterIndex() {
 
@@ -31,6 +32,7 @@ export default function ChapterIndex() {
           Git
           <ol>
             <li><Link to="git">Versionskontrolle</Link></li>
+            <li><Link to="git-branches">Versionszweige (<ICode>branch</ICode>es)</Link></li>
           </ol>
         </li>
       </ol>

@@ -10,6 +10,7 @@ import ChapterCSSSelectors from './sites/html/03-1-css-selectors'
 import ChapterCSSBoxModel from './sites/html/03-2-css-box-model'
 import ChapterCSSAnimations from './sites/html/03-3-css-animationen'
 import ChapterGit from './sites/html/04-0-git'
+import ChapterGitBranches from './sites/html/04-1-git-branches'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="css-box-model" element={<ChapterCSSBoxModel />} />
           <Route path="css-animations" element={<ChapterCSSAnimations />} />
           <Route path="git" element={<ChapterGit />} />
+          <Route path="git-branches" element={<ChapterGitBranches />} />
         </Route>
       </Routes>
     </>
