@@ -10,6 +10,7 @@ import ChapterCSSBoxModel from "./sites/html/03-2-css-box-model"
 import ChapterCSSAnimations from "./sites/html/03-3-css-animationen"
 import ChapterGit from "./sites/html/04-0-git"
 import ChapterGitBranches from "./sites/html/04-1-git-branches"
+import ICode from "./components/ICode"
 
 export default function App() {
   return (
