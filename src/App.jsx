@@ -4,12 +4,12 @@ import ChapterIndex from './sites/html/00-index'
 import ChapterInstallation from './sites/html/01-installation'
 import ChapterHTMLElements from './sites/html/02-1-html-elements'
 import ChapterHTMLAttributes from './sites/html/02-2-html-attributes'
-import ChapterHTML from './sites/html/02-html'
-import ChapterCSS from './sites/html/03-css'
+import ChapterHTML from './sites/html/02-0-html'
+import ChapterCSS from './sites/html/03-0-css'
 import ChapterCSSSelectors from './sites/html/03-1-css-selectors'
 import ChapterCSSBoxModel from './sites/html/03-2-css-box-model'
 import ChapterCSSAnimations from './sites/html/03-3-css-animationen'
-import ChapterGit from './sites/html/04-git'
+import ChapterGit from './sites/html/04-0-git'
 
 function App() {
 
