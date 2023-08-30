@@ -46,7 +46,22 @@ export default function ChapterGit() {
           Sie interessante Änderungen schnell sehen.
         </p>
       </section>
-      
+      <section>
+        <h3>Änderungen inspizieren</h3>
+        <p>
+        In einfachen Projekten wo Sie alleine Arbeiten, braucht man dies nicht so oft.
+        Dennoch sollten Sie Sich damit vertraut machen, Änderungen in Dateien zu lesen.
+        Die Änderungen zusammen mit der <ICode>commit</ICode>-Nachricht, ergeben eine Art
+        Selbstdokumentation, Sie müssen dadurch nicht extra noch Notizen mitschreiben.
+        </p>
+        <Example title="Beispiel: Änderungen anschauen">
+          Das folgende Video erklärt so ausführlich wie möglich, wie man in <b>Git</b>
+          mit Änderungen arbeitet. Versuchen Sie dem Video so gut wie möglich zu folgen,
+          und erstellen Sie sich einen für Sie praktischen Workflow, den Sie öfters anwenden werden.
+          {/* TODO: Create Video and change Link */}
+          <Video url="xRys4H_kTzI" />
+        </Example>
+      </section>
     </Chapter>
   )
 }
