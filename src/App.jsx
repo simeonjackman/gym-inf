@@ -9,6 +9,7 @@ import ChapterCSS from './sites/html/03-css'
 import ChapterCSSSelectors from './sites/html/03-1-css-selectors'
 import ChapterCSSBoxModel from './sites/html/03-2-css-box-model'
 import ChapterCSSAnimations from './sites/html/03-3-css-animationen'
+import ChapterGit from './sites/html/04-git'
 
 function App() {
 
