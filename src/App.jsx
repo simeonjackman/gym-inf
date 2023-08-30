@@ -11,6 +11,7 @@ import ChapterCSSAnimations from "./sites/html/03-3-css-animationen"
 import ChapterGit from "./sites/html/04-0-git"
 import ChapterGitBranches from "./sites/html/04-1-git-branches"
 import ICode from "./components/ICode"
+import ChapterGitMerges from "./sites/html/04-2-git-merges"
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="css-animations" element={<ChapterCSSAnimations />} />
           <Route path="git" element={<ChapterGit />} />
           <Route path="git-branches" element={<ChapterGitBranches />} />
+          <Route path="git-merges" element={<ChapterGitMerges />} />
         </Route>
       </Routes>
     </>
@@ -102,6 +104,11 @@ function ChapterIndex() {
             <li>
               <Link to="git-branches">
                 Versionszweige (<ICode>branch</ICode>es)
+              </Link>
+            </li>
+            <li>
+              <Link to="git-merges">
+                Versionen zusammenführen (<ICode>merge</ICode>)
               </Link>
             </li>
           </ol>
