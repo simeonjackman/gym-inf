@@ -4,6 +4,7 @@ import Example from "../../components/Example"
 import ICode from "../../components/ICode"
 import LCode from "../../components/LCode"
 import Tag from "../../components/Tag"
+import Video from "../../components/Video"
 
 export default function ChapterGit() {
   return (
