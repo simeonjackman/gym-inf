@@ -15,12 +15,14 @@ export default function ChapterGitBranches() {
       <section>
         <p>
           <b>Git</b> operiert auf sogenannten <ICode>branch</ICode>es. Ein
-          <ICode>branch</ICode> ist ein Zweig im Versionsverlauf, was nichts anderes bedeutet als dass alle{" "}
-          <ICode>commit</ICode>s auf diesem Zweig angeordnet sind.
+          <ICode>branch</ICode> ist ein Zweig im Versionsverlauf, was nichts
+          anderes bedeutet als dass alle <ICode>commit</ICode>s auf diesem Zweig
+          angeordnet sind.
         </p>
         <p>
-          Man kann in <b>Git</b> mehr wie nur einen <ICode>branch</ICode> haben, dadurch können mehrere Personen an
-          einem Projekt arbeiten, oder man kann verschiedene Entwicklungen zur gleichen Zeit erproben. Dies kann
+          Man kann in <b>Git</b> mehr wie nur einen <ICode>branch</ICode> haben,
+          dadurch können mehrere Personen an einem Projekt arbeiten, oder man
+          kann verschiedene Entwicklungen zur gleichen Zeit erproben. Dies kann
           praktisch sein, wenn man verschiedene Designs testen möchte.
         </p>
         <Example title="Beispiel: 2 unterschiedliche Designs entwickeln und vergleichen">
@@ -30,9 +32,10 @@ export default function ChapterGitBranches() {
             zu vergleichen. Am einfachsten geht das mit dem Design.
           </p>
           <p>
-            Das folgende Video zeigt wie man 2 <ICode>branch</ICode>es erstellt, und diese dann vergleicht.
+            Das folgende Video zeigt wie man 2 <ICode>branch</ICode>es erstellt,
+            und diese dann vergleicht.
           </p>
-          <Video url="" />
+          <Video url="ZGymWLlR6VE" />
         </Example>
       </section>
     </Chapter>

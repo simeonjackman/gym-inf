@@ -42,7 +42,7 @@ export default function ChapterGitMerges() {
           </p>
           <p>Das folgende Video zeigt wie man so etwas machen würde.</p>
           {/* TODO: Video zu branches erstellen */}
-          <Video url="" />
+          <Video url="TmWNWbXpfzs" />
         </Example>
       </section>
     </Chapter>
