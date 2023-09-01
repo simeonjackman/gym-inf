@@ -55,6 +55,7 @@ function Layout() {
       <main>
         <Outlet />
       </main>
+      <footer>Informatik Gymnasium Muttenz</footer>
     </>
   )
 }
