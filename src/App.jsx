@@ -44,12 +44,14 @@ export default function App() {
 function Layout() {
   return (
     <>
-      <h1>
-        <Link to="/">Gym Informatik</Link>
-        <span className="back">
-          <Link to="/">Home</Link>
-        </span>
-      </h1>
+      <header>
+        <h1>
+          <Link to="/">Gym Informatik</Link>
+          <span className="back">
+            <Link to="/">Home</Link>
+          </span>
+        </h1>
+      </header>
       <main>
         <Outlet />
       </main>
@@ -60,7 +62,7 @@ function Layout() {
 function ChapterIndex() {
   return (
     <>
-      <ol>
+      <ol className="nav">
         <li>
           Einführung
           <ol>

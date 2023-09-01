@@ -55,3 +55,32 @@ h1 > .back {
 h1 {
   margin: 20px 50px;
 }
+
+ol.nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 5px 0;
+}
+
+ol.nav li:hover > a {
+  text-decoration: underline;
+}
+
+ol.nav > li {
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.502);
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+ol.nav * {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+ol.nav {
+  width: clamp(460px, 70%, 720px);
+  margin: 10px auto;
+  list-style: none;
+}
