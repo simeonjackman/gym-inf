@@ -13,6 +13,7 @@ import ChapterGitBranches from "./sites/html/04-1-git-branches"
 import ICode from "./components/ICode"
 import ChapterGitMerges from "./sites/html/04-2-git-merges"
 import ChapterGitMergeConflicts from "./sites/html/04-3-git-merge-conflicts"
+import { useEffect, useRef } from "react"
 
 export default function App() {
   return (
@@ -42,6 +43,15 @@ export default function App() {
 }
 
 function Layout() {
+  const dialogRef = useRef(null)
+  useEffect(() => {
+    window.addEventListener("keydown", (ev) => {
+      if (ev.shiftKey && ev.key === " ") {
+        dialogRef.current.textContent = window.location
+        dialogRef.current.showModal()
+      }
+    })
+  }, [])
   return (
     <>
       <header>
@@ -54,6 +64,14 @@ function Layout() {
       </header>
       <main>
         <Outlet />
+        <dialog
+          style={{
+            padding: "4rem 2rem",
+            fontSize: "2.5rem",
+            fontWeight: "bold",
+            fontFamily: "monospace",
+          }}
+          ref={dialogRef}>{`${window.location}`}</dialog>
       </main>
       <footer>Informatik Gymnasium Muttenz</footer>
     </>
