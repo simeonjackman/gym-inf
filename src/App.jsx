@@ -13,6 +13,10 @@ import ChapterGitBranches from "./sites/html/04-1-git-branches"
 import ICode from "./components/ICode"
 import ChapterGitMerges from "./sites/html/04-2-git-merges"
 import ChapterGitMergeConflicts from "./sites/html/04-3-git-merge-conflicts"
+import ChapterHTMLDivAndSpan from "./sites/html/05-0-html-div-and-span"
+import Tag from "./components/Tag"
+import { useEffect } from "react"
+import { useRef } from "react"
 
 export default function App() {
   return (
@@ -35,6 +39,7 @@ export default function App() {
             path="git-merge-conflicts"
             element={<ChapterGitMergeConflicts />}
           />
+          <Route path="html-div-and-span" element={<ChapterHTMLDivAndSpan />} />
         </Route>
       </Routes>
     </>
@@ -42,6 +47,15 @@ export default function App() {
 }
 
 function Layout() {
+  const dialogRef = useRef(null)
+  useEffect(() => {
+    window.addEventListener("keydown", (ev) => {
+      if (ev.shiftKey && ev.key === " ") {
+        dialogRef.current.textContent = window.location
+        dialogRef.current.showModal()
+      }
+    })
+  }, [])
   return (
     <>
       <header>
@@ -54,6 +68,14 @@ function Layout() {
       </header>
       <main>
         <Outlet />
+        <dialog
+          style={{
+            padding: "4rem 2rem",
+            fontSize: "2.5rem",
+            fontWeight: "bold",
+            fontFamily: "monospace",
+          }}
+          ref={dialogRef}>{`${window.location}`}</dialog>
       </main>
       <footer>Informatik Gymnasium Muttenz</footer>
     </>
@@ -122,6 +144,16 @@ function ChapterIndex() {
             <li>
               <Link to="git-merge-conflicts">
                 <ICode>merge</ICode>-Konflikte
+              </Link>
+            </li>
+          </ol>
+        </li>
+        <li>
+          HTML und CSS
+          <ol>
+            <li>
+              <Link to="html-div-and-span">
+                <Tag>div</Tag> und <Tag>span</Tag>
               </Link>
             </li>
           </ol>
