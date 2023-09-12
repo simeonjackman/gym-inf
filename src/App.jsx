@@ -144,6 +144,14 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
+        <li>
+          Tipps and Tricks for HTML and CSS
+          <ol>
+            <li>
+              <Link to="tipp-images">Bilder zentrieren</Link>
+            </li>
+          </ol>
+        </li>
       </ol>
     </>
   )
