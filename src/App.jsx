@@ -14,6 +14,7 @@ import ICode from "./components/ICode"
 import ChapterGitMerges from "./sites/html/04-2-git-merges"
 import ChapterGitMergeConflicts from "./sites/html/04-3-git-merge-conflicts"
 import { useEffect, useRef } from "react"
+import ChapterTippsCenterImage from "./sites/html/05-1-center-img"
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
             path="git-merge-conflicts"
             element={<ChapterGitMergeConflicts />}
           />
+          <Route path="tipp-images" element={<ChapterTippsCenterImage />} />
         </Route>
       </Routes>
     </>
