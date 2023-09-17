@@ -68,10 +68,33 @@ export default function TippsImgBackground() {
   transform: translateY(-50%);
 }`}></LCode>
         <p>
-          Es sind einige Elemente und komplexe Selektoren, dafür kann es eben
-          sehr gut angepasst werden. Zum Beispiel kann man sehr gut Transitionen
+          Es sind einige Elemente und komplexe Selektoren, dafür kann es sehr
+          gut angepasst werden. Zum Beispiel können ganz einfach Transitionen
           hinzufügen.
         </p>
+      </section>
+      <section>
+        <h3>Einfacher aber weniger flexibel</h3>
+        <p>
+          Wenn nur ein Bild als Hintergrund in einem Element eingefügt werden
+          soll, aber darüber hinaus nichts angepasst werden muss, kann auch der
+          folgende Code verwendet werden.
+        </p>
+        <Example title="Beispiel: Nur als Hintergrund">
+          <LCode
+            content={`.element-with-background {
+  height: 160px;
+  background-image: url("https://images.unsplash.com/photo-1434394354979-a235cd36269d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1vdW50YWluc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}`}></LCode>
+        </Example>
       </section>
     </Tipp>
   )
