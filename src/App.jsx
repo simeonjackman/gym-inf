@@ -14,11 +14,12 @@ import ICode from "./components/ICode"
 import ChapterGitMerges from "./sites/html/04-2-git-merges"
 import ChapterGitMergeConflicts from "./sites/html/04-3-git-merge-conflicts"
 import { useEffect, useRef } from "react"
-import ChapterTippsCenterImage from "./sites/html/05-1-center-img"
-import ChapterTippsLayout from "./sites/html/05-2-layout"
+import ChapterTippsCenterImage from "./sites/tipps/05-1-center-img"
+import ChapterTippsLayout from "./sites/tipps/05-2-layout"
 import Tipp from "./components/Tipp"
 import TippsImgBackground from "./sites/tipps/img-background"
 import TippsImgNextToText from "./sites/tipps/img-next-to-text"
+import ChapterJavascriptIntroduction from "./sites/html/05-0-javascript"
 
 export default function App() {
   return (
@@ -45,6 +46,10 @@ export default function App() {
           <Route path="tipp-flexbox" element={<ChapterTippsLayout />} />
           <Route path="img-background" element={<TippsImgBackground />} />
           <Route path="img-next-to-text" element={<TippsImgNextToText />} />
+          <Route
+            path="javascript"
+            element={<ChapterJavascriptIntroduction />}
+          />
         </Route>
       </Routes>
     </>
@@ -154,7 +159,7 @@ function ChapterIndex() {
           </ol>
         </li>
         <li>
-          Tipps and Tricks for HTML and CSS
+          Tipps und Tricks für HTML und CSS
           <ol>
             <li>
               <Link to="tipp-images">Bilder zentrieren</Link>
@@ -162,16 +167,19 @@ function ChapterIndex() {
             <li>
               <Link to="tipp-flexbox">Layouts</Link>
             </li>
-          </ol>
-        </li>
-        <li>
-          Verschiedene Tipps
-          <ol>
             <li>
               <Link to="img-background">Bild als Hintergrund</Link>
             </li>
             <li>
               <Link to="img-next-to-text">Bild neben Text</Link>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Javascript
+          <ol>
+            <li>
+              <Link to="javascript">Einführung in Javascript</Link>
             </li>
           </ol>
         </li>
