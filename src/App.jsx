@@ -21,6 +21,7 @@ import TippsImgBackground from "./sites/tipps/img-background"
 import TippsImgNextToText from "./sites/tipps/img-next-to-text"
 import ChapterJavascriptIntroduction from "./sites/html/05-0-javascript"
 import ChapterJavascriptChangePage from "./sites/html/05-1-javascript-change-page"
+import ChapterJavascriptTextToNumbers from "./sites/html/05-2-javascript-text-to-numbers"
 
 export default function App() {
   return (
@@ -54,6 +55,10 @@ export default function App() {
           <Route
             path="javascript-change-page"
             element={<ChapterJavascriptChangePage />}
+          />
+          <Route
+            path="javascript-text-to-numbers"
+            element={<ChapterJavascriptTextToNumbers />}
           />
         </Route>
       </Routes>
@@ -189,6 +194,11 @@ function ChapterIndex() {
             <li>
               <Link to="javascript-change-page">
                 Seiteninhalte mit Javascript anpassen
+              </Link>
+            </li>
+            <li>
+              <Link to="javascript-text-to-numbers">
+                Datentypen in Javascript
               </Link>
             </li>
           </ol>
