@@ -54,7 +54,7 @@ export default function ChapterJavascriptTextToNumbers() {
       </Example>
 
       <div className="btn-container">
-        <Link className="btn" to="/javascript">
+        <Link className="btn" to="/javascript-change-page">
           Zurück
         </Link>
         <span></span>
