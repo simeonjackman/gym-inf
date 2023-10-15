@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Chapter from "../../components/Chapter"
 import Code from "../../components/Code"
 import Example from "../../components/Example"
@@ -69,6 +70,12 @@ export default function ChapterJavascriptIntroduction() {
         Erstellen Sie auch für diese Funktion einen Button, um die Funktion
         auszuführen.
       </Example>
+
+      <div className="btn-container right">
+        <Link className="btn" to="/javascript-change-page">
+          Weiter
+        </Link>
+      </div>
     </Chapter>
   )
 }

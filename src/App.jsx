@@ -20,6 +20,7 @@ import Tipp from "./components/Tipp"
 import TippsImgBackground from "./sites/tipps/img-background"
 import TippsImgNextToText from "./sites/tipps/img-next-to-text"
 import ChapterJavascriptIntroduction from "./sites/html/05-0-javascript"
+import ChapterJavascriptChangePage from "./sites/html/05-1-javascript-change-page"
 
 export default function App() {
   return (
@@ -49,6 +50,10 @@ export default function App() {
           <Route
             path="javascript"
             element={<ChapterJavascriptIntroduction />}
+          />
+          <Route
+            path="javascript-change-page"
+            element={<ChapterJavascriptChangePage />}
           />
         </Route>
       </Routes>
@@ -180,6 +185,11 @@ function ChapterIndex() {
           <ol>
             <li>
               <Link to="javascript">Einführung in Javascript</Link>
+            </li>
+            <li>
+              <Link to="javascript-change-page">
+                Seiteninhalte mit Javascript anpassen
+              </Link>
             </li>
           </ol>
         </li>

@@ -104,3 +104,27 @@ ol.nav {
   margin: 10px auto;
   list-style: none;
 }
+
+.btn {
+  background-color: cornflowerblue;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(83, 123, 199);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.right::before {
+  content: "";
+}
