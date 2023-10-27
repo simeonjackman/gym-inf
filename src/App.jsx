@@ -1,4 +1,5 @@
 import "./App.css"
+import "highlight.js/styles/default.min.css"
 import { Routes, Route, Link, Outlet } from "react-router-dom"
 import ChapterInstallation from "./sites/html/01-installation"
 import ChapterHTMLElements from "./sites/html/02-1-html-elements"
@@ -22,6 +23,7 @@ import TippsImgNextToText from "./sites/tipps/img-next-to-text"
 import ChapterJavascriptIntroduction from "./sites/html/05-0-javascript"
 import ChapterJavascriptChangePage from "./sites/html/05-1-javascript-change-page"
 import ChapterJavascriptTextToNumbers from "./sites/html/05-2-javascript-text-to-numbers"
+import hljs from "highlight.js"
 
 export default function App() {
   return (
