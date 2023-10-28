@@ -23,6 +23,7 @@ import ChapterJavascriptIntroduction from "./sites/html/05-0-javascript"
 import ChapterJavascriptChangePage from "./sites/html/05-1-javascript-change-page"
 import ChapterJavascriptTextToNumbers from "./sites/html/05-2-javascript-text-to-numbers"
 import hljs from "highlight.js"
+import ChapterJavascriptIf from "./sites/html/06-0-javascript-if"
 
 export default function App() {
   return (
@@ -61,6 +62,7 @@ export default function App() {
             path="javascript-text-to-numbers"
             element={<ChapterJavascriptTextToNumbers />}
           />
+          <Route path="javascript-if" element={<ChapterJavascriptIf />} />
         </Route>
       </Routes>
     </>
@@ -200,6 +202,16 @@ function ChapterIndex() {
             <li>
               <Link to="javascript-text-to-numbers">
                 Datentypen in Javascript
+              </Link>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Javascript: Logik
+          <ol>
+            <li>
+              <Link to="javascript-if">
+                Bedingungen (<pre>if</pre>)
               </Link>
             </li>
           </ol>
