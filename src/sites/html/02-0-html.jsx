@@ -19,8 +19,7 @@ export default function ChapterHTML() {
           Möchten wir einen Text als <b>Titel</b> festlegen, machen wir das in{" "}
           <b>HTML</b> mit der folgenden Syntax:
         </p>
-        <Code>
-          <h1>Titel</h1>
+        <Code content={`<h1>Titel</h1>`}>
         </Code>
         <p>
           Mit <Tag>h1</Tag> sagen Sie dem Computer dass nun ein Titel folgt.
