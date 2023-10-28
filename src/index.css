@@ -44,7 +44,7 @@ footer {
 
 #root main {
   margin: 0 auto;
-  width: clamp(100%, 70vw, 640px);
+  width: clamp(460px, 80%, 920px);
 }
 
 .auftrag::before {
