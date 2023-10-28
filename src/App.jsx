@@ -1,4 +1,3 @@
-import "./App.css"
 import "highlight.js/styles/default.min.css"
 import { Routes, Route, Link, Outlet } from "react-router-dom"
 import ChapterInstallation from "./sites/html/01-installation"

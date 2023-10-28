@@ -19,8 +19,7 @@ export default function ChapterHTML() {
           Möchten wir einen Text als <b>Titel</b> festlegen, machen wir das in{" "}
           <b>HTML</b> mit der folgenden Syntax:
         </p>
-        <Code content={`<h1>Titel</h1>`}>
-        </Code>
+        <Code language="html" content={`<h1>Titel</h1>`}></Code>
         <p>
           Mit <Tag>h1</Tag> sagen Sie dem Computer dass nun ein Titel folgt.
           Dann wird all der Text bis <Tag>/h1</Tag> als Titel interpretiert.
@@ -53,12 +52,13 @@ export default function ChapterHTML() {
           Liste ist jedes Element ein Listeneintrag. Der folgende Code erstellt
           Ihnen eine Liste.
         </p>
-        <Code>
-          <ul>
-            <li>Eintrag eins</li>
-            <li>Eintrag zwei</li>
-          </ul>
-        </Code>
+        <Code
+          language="html"
+          content={`<ul>
+  <li>Eintrag eins</li>
+  <li>Eintrag zwei</li>
+</ul>`}
+        />
         <p>
           Versuchen Sie neue Einträge hinzuzufügen, und ändern Sie die Liste in
           eine geordnete Liste.
@@ -70,12 +70,11 @@ export default function ChapterHTML() {
           Bilder können sie mit dem <Tag>img</Tag>-Tag einfügen. Dazu ein
           einfaches Beispiel.
         </p>
-        <Code>
-          <img
-            src="https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
-            width="500px"
-          />
-        </Code>
+        <Code
+          language="html"
+          content={`<img
+  src="https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+  width="500px" />`}></Code>
       </section>
     </Chapter>
   )
