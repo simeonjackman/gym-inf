@@ -83,8 +83,17 @@
 		"scope": "javascriptreact",
 		"prefix": "code",
 		"body": [
-			"<LCode language=\"${1:html}\" content={`${2}`} />"
+			"<Code language=\"${1:html}\" content={`${2}`} />"
 		]
-	} 
+	},
+	"[gyminf] Blockumgebung für ein Beispiel": {
+		"scope": "javascriptreact",
+		"prefix": "ex",
+		"body": [
+			"<Example title=\"${1:Beispiel: }\">",
+			"	${0}",
+			"</Example>"
+		]
+	}
 	
 }
