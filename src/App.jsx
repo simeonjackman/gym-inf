@@ -25,6 +25,7 @@ import ChapterJavascriptTextToNumbers from "./sites/html/05-2-javascript-text-to
 import hljs from "highlight.js"
 import ChapterJavascriptIf from "./sites/html/06-0-javascript-if"
 import ChapterJavascriptFor from "./sites/html/06-1-javascript-for"
+import ChapterJavascriptReturn from "./sites/html/06-2-javascript-return"
 
 export default function App() {
   return (
@@ -65,6 +66,7 @@ export default function App() {
           />
           <Route path="javascript-if" element={<ChapterJavascriptIf />} />
           <Route path="javascript-for" element={<ChapterJavascriptFor />} />
+          <Route path="javascript-return" element={<ChapterJavascriptReturn />} />
         </Route>
       </Routes>
     </>
@@ -219,6 +221,11 @@ function ChapterIndex() {
             <li>
               <Link to="javascript-for">
                 Javascript Schleifen (<pre>for</pre>)
+              </Link>
+            </li>
+            <li>
+              <Link to="javascript-return">
+                Rückgabewerte in Javascript (<pre>return</pre>)
               </Link>
             </li>
           </ol>
