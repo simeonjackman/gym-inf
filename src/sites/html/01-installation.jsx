@@ -31,10 +31,10 @@ export default function ChapterInstallation() {
             <a href="https://www.google.com/chrome/">Chrome</a> (Webbrowser)
           </li>
         </ol>
-        <Example title="Auftrag">
-          Installieren Sie die Programme über die jeweiligen Links.
-        </Example>
       </section>
+      <Example title="Auftrag">
+        Installieren Sie die Programme über die jeweiligen Links.
+      </Example>
 
       <section>
         <h3>VS Code Plugins</h3>
@@ -81,20 +81,18 @@ export default function ChapterInstallation() {
         </p>
       </section>
 
-      <section>
-        <Example title="Auftrag: Eigene Webseite erstellen">
-          <p>
-            Wenn Ihr Setup funktioniert, erweitern Sie das Projekt so, das Sie
-            eine eigene Webseite erstellen. Erstellen Sie jedes mal eine neue
-            Version/Commit, wenn Sie eine Änderung gemacht haben, mit der Sie
-            zufrieden sind.
-          </p>
-          <p>
-            Was Sie alles in Webseiten einbinden können, finden Sie hier:{" "}
-            <a href="#html">Webseiten</a>.
-          </p>
-        </Example>
-      </section>
+      <Example title="Auftrag: Eigene Webseite erstellen">
+        <p>
+          Wenn Ihr Setup funktioniert, erweitern Sie das Projekt so, das Sie
+          eine eigene Webseite erstellen. Erstellen Sie jedes mal eine neue
+          Version/Commit, wenn Sie eine Änderung gemacht haben, mit der Sie
+          zufrieden sind.
+        </p>
+        <p>
+          Was Sie alles in Webseiten einbinden können, finden Sie hier:{" "}
+          <a href="#html">Webseiten</a>.
+        </p>
+      </Example>
     </>
   )
 }

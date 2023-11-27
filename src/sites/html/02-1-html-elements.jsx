@@ -15,11 +15,13 @@ export default function ChapterHTMLElements() {
         fest einsetzen möchte, liegt dabei beim Benutzer. Sinnvoll ist es sich
         eine einfache Struktur zu überlegen, und diese so gut es geht
         beizubehalten.
-        <Example title="Beispiel: Artikel mit Abschnitt">
-          Ein Artikel hat in der Regel einen Titel und besteht aus verschiedenen
-          Abschnitten. Dies kann mit HTML einfach dargestellt werden.
-          <LCode
-            content={`<article>
+      </section>
+      <Example title="Beispiel: Artikel mit Abschnitt">
+        Ein Artikel hat in der Regel einen Titel und besteht aus verschiedenen
+        Abschnitten. Dies kann mit HTML einfach dargestellt werden.
+        <Code
+          language="html"
+          content={`<article>
   <h2>Titel</h2>
   <section>
     Dies ist der erste Abschnitt.
@@ -28,53 +30,50 @@ export default function ChapterHTMLElements() {
     <p>Der zweite Abschnitt hat mehrere Unterabschnitte.</p>
     <p>Dies ist der zweite Unterabschnitt.</p>
   </section>
-</article>`}></LCode>
-          Die logische Struktur kann hier einfach vom Programmierer und auch vom
-          Computer ausgelesen werden. Durch diese Art der Struktur, können
-          später dann verschiedene Stiele auf die Webseite angewendet werden,
-          was eine schöne und einheitliche Gestaltung ermöglicht, ohne darüber
-          nachdenken zu müssen.
-        </Example>
-      </section>
+</article>`}></Code>
+        Die logische Struktur kann hier einfach vom Programmierer und auch vom
+        Computer ausgelesen werden. Durch diese Art der Struktur, können später
+        dann verschiedene Stiele auf die Webseite angewendet werden, was eine
+        schöne und einheitliche Gestaltung ermöglicht, ohne darüber nachdenken
+        zu müssen.
+      </Example>
       <section>
         <h2>Textelemente hervorheben</h2>
-        <p>
-          Wenn wir eine Webseite erstellen, möchten wir nicht nur die Seite
-          strukturieren, sondern auch einzelne Elemente hervorheben können. Soll
-          ein bestimmtes Wort im Text hervorgehoben werden, kann man dies
-          entweder durch <b>Fettdruck</b> oder <i>Kursiv</i> erreichen. Es gibt
-          auch noch andere Möglichkeiten Text hervorzuheben.
-        </p>
-        <Example title="Aufgabe: Bauen Sie die folgenden Elemente in Ihre Webseite ein.">
-          <ul>
-            <li>
-              <Tag>b</Tag>
-            </li>
-            <li>
-              <Tag>i</Tag>
-            </li>
-            <li>
-              <Tag>strong</Tag>
-            </li>
-            <li>
-              <Tag>mark</Tag>
-            </li>
-            <li>
-              <Tag>em</Tag>
-            </li>
-            <li>
-              <Tag>sub</Tag>
-            </li>
-            <li>
-              <Tag>sup</Tag>
-            </li>
-          </ul>
-          Wenn Sie noch mehr Elemente brauchen, oder mehr zu den einzelnen
-          Elementen wissen möchten, finden sie{" "}
-          <a href="https://www.w3schools.com/html/html_formatting.asp">hier</a>{" "}
-          weitere Informationen.
-        </Example>
+        Wenn wir eine Webseite erstellen, möchten wir nicht nur die Seite
+        strukturieren, sondern auch einzelne Elemente hervorheben können. Soll
+        ein bestimmtes Wort im Text hervorgehoben werden, kann man dies entweder
+        durch <b>Fettdruck</b> oder <i>Kursiv</i> erreichen. Es gibt auch noch
+        andere Möglichkeiten Text hervorzuheben.
       </section>
+      <Example title="Aufgabe: Bauen Sie die folgenden Elemente in Ihre Webseite ein.">
+        <ul>
+          <li>
+            <Tag>b</Tag>
+          </li>
+          <li>
+            <Tag>i</Tag>
+          </li>
+          <li>
+            <Tag>strong</Tag>
+          </li>
+          <li>
+            <Tag>mark</Tag>
+          </li>
+          <li>
+            <Tag>em</Tag>
+          </li>
+          <li>
+            <Tag>sub</Tag>
+          </li>
+          <li>
+            <Tag>sup</Tag>
+          </li>
+        </ul>
+        Wenn Sie noch mehr Elemente brauchen, oder mehr zu den einzelnen
+        Elementen wissen möchten, finden sie{" "}
+        <a href="https://www.w3schools.com/html/html_formatting.asp">hier</a>{" "}
+        weitere Informationen.
+      </Example>
 
       <section>
         <h2>Block- und Inline-Elemente</h2>
@@ -87,22 +86,21 @@ export default function ChapterHTMLElements() {
         Webseite ein, und danach kommt ein Umbruch. Ein Inlineelment hingegen,
         nimmt nur so viel Platz wie es braucht, und danach geht der Text direkt
         weiter.
-        <Example title="Aufgabe: Spielen mit Block- und Inline-Elementen">
-          <ul>
-            <li>
-              Was passiert wenn Sie ein Blockelement in ein Inlineelement
-              packen?
-            </li>
-            <li>
-              Von Typ ist <Tag>img</Tag>?
-            </li>
-            <li>
-              Wie können Sie ein Bild zentriert anzeigen, ohne Text daneben?
-              (Tipp: <Tag>center</Tag>)
-            </li>
-          </ul>
-        </Example>
       </section>
+      <Example title="Aufgabe: Spielen mit Block- und Inline-Elementen">
+        <ul>
+          <li>
+            Was passiert wenn Sie ein Blockelement in ein Inlineelement packen?
+          </li>
+          <li>
+            Von Typ ist <Tag>img</Tag>?
+          </li>
+          <li>
+            Wie können Sie ein Bild zentriert anzeigen, ohne Text daneben?
+            (Tipp: <Tag>center</Tag>)
+          </li>
+        </ul>
+      </Example>
     </Chapter>
   )
 }
