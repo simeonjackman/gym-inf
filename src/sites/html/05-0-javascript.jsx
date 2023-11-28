@@ -29,7 +29,9 @@ export default function ChapterJavascriptIntroduction() {
         Wie bereits bei <pre>CSS</pre> müssen wir auch das Javascript separat
         einbinden. Dafür fügen wir den folgenden Code im <Tag>head</Tag> von
         unserem <pre>HTML</pre> ein.
-        <LCode content={`<script src="script.js" defer></script>`}></LCode>
+        <Code
+          language="html"
+          content={`<script src="script.js" defer></script>`}></Code>
         Damit können wir den Code in der Datei <pre>script.js</pre> in der
         Webseite verwenden.
       </section>
@@ -49,17 +51,19 @@ export default function ChapterJavascriptIntroduction() {
           Grüssen soll. Dafür fügen wir den folgenden Code in der Datei{" "}
           <pre>script.js</pre> ein:
         </p>
-        <LCode
+        <Code
+          language="javascript"
           content={`function sayHello() {
     alert("Hello World")
-}`}></LCode>
+}`}></Code>
         <p>
           Dies stellt der Webseite diese Funktion zur Verfügung, wir müssen die
           Funktion aber noch aufrufen, damit sie auch ausgeführt wird. Das
           machen wir mit dem folgenden <pre>HTML</pre> Code.
         </p>
-        <LCode
-          content={`<button onclick="sayHello()">Begrüssung ausführen</button>`}></LCode>
+        <Code
+          language="html"
+          content={`<button onclick="sayHello()">Begrüssung ausführen</button>`}></Code>
         <p>
           So funktionieren alle Codes die wir erstellen. Wir erstellen eine
           Funktion, und rufen diese dann aus dem <pre>HTML</pre> auf.

@@ -29,17 +29,19 @@ export default function ChapterJavascriptChangePage() {
         Wir betrachten die folgende Funktion in Javascript, sie soll den Text
         von einem Element mit dem Text <pre>"Dieser Text wurde gelöscht!"</pre>{" "}
         ersetzen.
-        <LCode
+        <Code
+          language="javascript"
           content={`function deleteText() {
   const elemToDeleteText = document.querySelector("#to-delete")
   elemToDeleteText.textContent = "Dieser Text wurde gelöscht!"
-}`}></LCode>
+}`}></Code>
         Die Funktion existiert nun, und wir müssen sie nur noch ausführen. Wir
         brauchen aber auch noch das Element auf dem der Text gelöscht werden
         soll, das macht der folgende HTML-Code.
-        <LCode
+        <Code
+          language="html"
           content={`<p id="to-delete">Hier steht Text der später gelöscht werden soll.</p>
-<button onclick="deleteText()">Text löschen</button>`}></LCode>
+<button onclick="deleteText()">Text löschen</button>`}></Code>
       </Example>
 
       <div className="btn-container">

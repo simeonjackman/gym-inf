@@ -41,13 +41,14 @@ export default function ChapterJavascriptTextToNumbers() {
         Wir haben ein HTML-Element mit der ID <pre>zahl</pre>, darin steht eine
         7. Möchten wir nun diese 7 auslesen und 3 dazu addieren, können wir das
         mit dem folgenden Code machen.
-        <LCode
+        <Code
+          language="javascript"
           content={`function plusThree() {
   const numberElement = document.querySelector("#zahl")
   let num = parseInt(numberElement.textContent)
   num = num + 3
   numberElement.textContent = num
-}`}></LCode>
+}`}></Code>
         Mit <pre>parseInt()</pre> wird der Text als Zahl gelesen, und man kann
         dann damit ganz normal rechnen. Testen Sie mal was passiert wenn Sie
         diese Funktion weglassen.
