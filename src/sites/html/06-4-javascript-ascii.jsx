@@ -74,7 +74,7 @@ for (let i = 0; i < list.length - 1; i++) {
 const result = list.join("")
 console.log(result)`}
         />
-        Am eine ist <ICode>result</ICode> der sortierte Text.
+        Am Ende ist <ICode>result</ICode> der sortierte Text.
       </Example>
     </Chapter>
   )
