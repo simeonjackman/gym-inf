@@ -41,6 +41,8 @@ for (let i = 0; i < text.length; i++) {
 }
 const result = [listFirst.join(""), listSecond.join("")]`}
         />
+        Solange wir nur 2 Fälle haben, ist der Code sehr einfach. Mit mehr
+        Fällen kann es komplexer werden, aber nicht unbedingt schwieriger.
       </Example>
     </Chapter>
   )
