@@ -82,6 +82,7 @@ for (let i = 0; i < text.length; i++) {
     currentPhrase.push(currentElement)
   }
 }
+phases.push(currentPhrase.join(""))
 console.log(phrases)`}
         />
         So wie wir den Code hier geschrieben haben, wird der Punkt jeweils
