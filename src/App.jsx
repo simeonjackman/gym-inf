@@ -28,6 +28,7 @@ import ChapterJavascriptFor from "./sites/html/06-1-javascript-for"
 import ChapterJavascriptReturn from "./sites/html/06-2-javascript-return"
 import ChapterJavascriptLists from "./sites/html/06-3-javascript-lists"
 import ChapterJavascriptASCII from "./sites/html/06-4-javascript-ascii"
+import ChapterJavascriptSwitches from "./sites/html/06-5-javascript-switches"
 
 export default function App() {
   return (
@@ -74,6 +75,10 @@ export default function App() {
           />
           <Route path="javascript-lists" element={<ChapterJavascriptLists />} />
           <Route path="javascript-ascii" element={<ChapterJavascriptASCII />} />
+          <Route
+            path="javascript-switches"
+            element={<ChapterJavascriptSwitches />}
+          />
         </Route>
       </Routes>
     </>
@@ -240,6 +245,9 @@ function ChapterIndex() {
             </li>
             <li>
               <Link to="javascript-ascii">ASCII-Codes in Javascript</Link>
+            </li>
+            <li>
+              <Link to="javascript-switches">Schalter in Javascript</Link>
             </li>
           </ol>
         </li>
