@@ -27,6 +27,7 @@ import ChapterJavascriptIf from "./sites/html/06-0-javascript-if"
 import ChapterJavascriptFor from "./sites/html/06-1-javascript-for"
 import ChapterJavascriptReturn from "./sites/html/06-2-javascript-return"
 import ChapterJavascriptLists from "./sites/html/06-3-javascript-lists"
+import ChapterJavascriptASCII from "./sites/html/06-4-javascript-ascii"
 
 export default function App() {
   return (
@@ -67,8 +68,12 @@ export default function App() {
           />
           <Route path="javascript-if" element={<ChapterJavascriptIf />} />
           <Route path="javascript-for" element={<ChapterJavascriptFor />} />
-          <Route path="javascript-return" element={<ChapterJavascriptReturn />} />
+          <Route
+            path="javascript-return"
+            element={<ChapterJavascriptReturn />}
+          />
           <Route path="javascript-lists" element={<ChapterJavascriptLists />} />
+          <Route path="javascript-ascii" element={<ChapterJavascriptASCII />} />
         </Route>
       </Routes>
     </>
@@ -231,9 +236,10 @@ function ChapterIndex() {
               </Link>
             </li>
             <li>
-              <Link to="javascript-lists">
-                Listen in Javascript
-              </Link>
+              <Link to="javascript-lists">Listen in Javascript</Link>
+            </li>
+            <li>
+              <Link to="javascript-ascii">ASCII-Codes in Javascript</Link>
             </li>
           </ol>
         </li>
