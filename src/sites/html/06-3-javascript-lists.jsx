@@ -37,9 +37,10 @@ export default function ChapterJavascriptLists() {
         Code dazu könnte also wie folgt aussehen:
         <Code
           language="javascript"
-          content={`const text = "Hier ist Text. Und hier noch mehr."
-const result = []
-for (let i = 0; i < text.length; i++) {
+          content={`function firstSentence() {
+  const text = "Hier ist Text. Und hier noch mehr."
+  const result = []
+  for (let i = 0; i < text.length; i++) {
   result.push(text[i])
   if (text[i] === '.') {
     if (text.length-1 === i) {
@@ -48,8 +49,8 @@ for (let i = 0; i < text.length; i++) {
       return [result.join(""), true]
     }
   }
-return [result.join(""), false]
-`}
+  return [result.join(""), false]
+}`}
         />
         Wenn der zweite Eintrag in der Liste <ICode>false</ICode> ist, wissen
         wir das kein weiterer Text mehr kommt.
@@ -68,20 +69,20 @@ return [result.join(""), false]
         <Code
           language="javascript"
           content={`const text = "Erster Satz. Und ein zweiter Satz. Auch noch ein dritter Satz."
-  const phrases = []
-  let currentPhrase = []
-  for (let i = 0; i < text.length; i++) {
-    const currentElement = text[i]
-    if (currentElement === '.') {
-      // Wenn wir hier sind haben wir einen '.' gefunden, und möchten den aktuellen Satz als eine Element in phrases speichern.
-      phrases.push(currentPhrase.join(""))
-      currentPhrase = []  // Damit löschen wir alles was im aktuellen Satz drin war.
-    } else {
-      // Wenn wir keinen '.' lesen, dann möchten wir die Zeichen an den aktuellen Satz anhängen.
-      currentPhrase.push(currentElement)
-    }
+const phrases = []
+let currentPhrase = []
+for (let i = 0; i < text.length; i++) {
+  const currentElement = text[i]
+  if (currentElement === '.') {
+    // Wenn wir hier sind haben wir einen '.' gefunden, und möchten den aktuellen Satz als eine Element in phrases speichern.
+    phrases.push(currentPhrase.join(""))
+    currentPhrase = []  // Damit löschen wir alles was im aktuellen Satz drin war.
+  } else {
+    // Wenn wir keinen '.' lesen, dann möchten wir die Zeichen an den aktuellen Satz anhängen.
+    currentPhrase.push(currentElement)
   }
-  return phrases`}
+}
+console.log(phrases)`}
         />
         So wie wir den Code hier geschrieben haben, wird der Punkt jeweils
         weggelassen. Das ist normalerweise auch so wenn man einen Text an einem

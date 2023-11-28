@@ -68,7 +68,7 @@ for (let i = 0; i < list.length - 1; i++) {
     const tmp = list[i+1]
     list[i+1] = list[i]
     list[i] = tmp
-    i = 0 // starte von vorne wenn etwas vertauscht wurde.
+    i = -1 // starte von vorne wenn etwas vertauscht wurde.
   }
 }
 const result = list.join("")
