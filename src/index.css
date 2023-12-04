@@ -42,23 +42,16 @@ footer {
   border-top: 0.5px solid rgba(255, 255, 255, 0.502);
 }
 
-#root main > section,
-#root main > h2 {
+#root main > p,
+#root main > section {
   margin: 0 auto;
   width: clamp(460px, 80%, 920px);
 }
 
-.auftrag::before {
-  content: "Auftrag";
-  font-size: 1.2em;
-  font-weight: bold;
-  display: block;
-}
-
-.auftrag {
-  border-left: 5px solid grey;
-  padding-left: 20px;
-  margin-top: 50px;
+#root main > h2,
+#root main > h3 {
+  margin: 20px auto;
+  width: clamp(460px, 80%, 920px);
 }
 
 h1 a {

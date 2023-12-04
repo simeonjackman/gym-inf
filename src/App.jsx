@@ -22,8 +22,8 @@ import ChapterJavascriptChangePage from "./sites/html/05-1-javascript-change-pag
 import ChapterJavascriptTextToNumbers from "./sites/html/05-2-javascript-text-to-numbers"
 import ChapterJavascriptIf from "./sites/html/06-0-javascript-if"
 import ChapterJavascriptFor from "./sites/html/06-1-javascript-for"
-import ChapterJavascriptReturn from "./sites/html/06-2-javascript-return"
-import ChapterJavascriptLists from "./sites/html/06-3-javascript-lists"
+import ChapterJavascriptReturn from "./sites/md/06-2-javascript-return.mdx"
+import ChapterJavascriptLists from "./sites/md/06-3-javascript-lists.mdx"
 import ChapterJavascriptASCII from "./sites/md/06-4-javascript-ascii.mdx"
 import ChapterJavascriptSwitches from "./sites/md/06-5-javascript-switches.mdx"
 
