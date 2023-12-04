@@ -1,0 +1,88 @@
+import Chapter from "../../components/Chapter"
+import Example from "../../components/Example"
+
+<Chapter>
+
+## Webseiten gestalten
+
+Bisher haben wir uns mit der Struktur von Webseiten beschäftigt. Nun möchten wir
+diese Strukturen auch verwenden um die Webseiten zu gestalten. Dies wird mit
+
+<b>CSS</b> (Cascading Style Sheets) gemacht.
+
+### Stylesheet einbinden
+
+Um eine saubere Trennung von Struktur und Gestaltung zu erreichen, können
+Stylesheets in Webseiten eingebunden werden. Damit können Styles auch auf
+mehreren Webseiten verwendet werden, und müssen nicht immer wiederholt werden.
+
+<Example title="Aufgabe: Stylesheet verlinken">
+  Fügen Sie den folgenden Code im `<head>` von Ihrem HTML Dokument
+  ein.
+
+```html
+<link rel="stylesheet" href="style.css" />
+```
+
+Erstellen Sie dann eine neue Datei mit dem Namen `style.css`
+
+</Example>
+
+### Stylesheet verwenden
+
+Haben Sie das Stylesheet eingebunden, möchten wir als erstes ausprobieren ob es
+funktioniert hat. Am einfachsten geht das wenn Sie eine direkt sichtbare
+Änderung machen. Zum Beispiel können Sie die Hintergrundfarbe der Webseite
+ändern.
+
+<Example title="Aufgabe: Neue Hintergrundfarbe">
+  Öffnen Sie `style.css` und geben Sie den folgenden Code
+  ein:
+
+```css
+body {
+  background-color: red;
+}
+```
+
+Der Hintergrund Ihrer ganzen Seite, sollte nun rot sein.
+
+</Example>
+
+### Weitere Elemente
+
+Sie können in CSS einzelne Elemente unterschiedlich gestalten, dafür brauchen
+Sie einfach weitere Regeln. Diese werden in der gleichen Datei eingefügt.
+
+<Example title="Aufgabe: Schriftfarbe des Titels ändern">
+
+Um den Titel besser hervorzuheben, möchten wir gerne die Farbe des Titels
+ändern, aber den Rest der Seite so lassen. Verwenden Sie dafür diese neue Regel.
+
+```css
+h1 {
+  color: whitesmoke;
+  text-decoration: underline;
+  text-align: center;
+}
+```
+
+Sie sollten nun einen zentrierten Titel haben der unterstrichen ist.
+
+</Example>
+
+### Mit CSS Regeln experimentieren
+
+Wie Sie gesehen haben, kann man verschiedene Regeln auf unterschiedliche
+Elemente anwenden. Versuchen Sie mithilfe des Editors eine weitere Regel für ein
+
+`<p>`-Tag zu erstellen, und diese anders zu gestalten.
+
+<Example title="Aufgabe: Webseite gestalten">
+
+Testen Sie verschiedene Stile für Ihre Webseite aus. Erstellen Sie jeweils einen
+neuen Commit, wenn Sie mit einem Stil zufrieden sind. Verändern Sie Ihren Stil
+mindestens 3 mal, um die History von Ihrem Projekt zu vergrössern.
+
+</Example>
+</Chapter>

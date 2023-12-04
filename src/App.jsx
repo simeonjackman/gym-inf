@@ -1,19 +1,20 @@
 import { Routes, Route, Link, Outlet } from "react-router-dom"
-import ChapterInstallation from "./sites/html/01-installation"
-import ChapterHTMLElements from "./sites/html/02-1-html-elements"
-import ChapterHTMLAttributes from "./sites/html/02-2-html-attributes"
-import ChapterHTML from "./sites/html/02-0-html"
-import ChapterCSS from "./sites/html/03-0-css"
-import ChapterCSSSelectors from "./sites/html/03-1-css-selectors"
-import ChapterCSSBoxModel from "./sites/html/03-2-css-box-model"
-import ChapterCSSAnimations from "./sites/html/03-3-css-animationen"
+import { useEffect, useRef } from "react"
+import ICode from "./components/ICode"
+
+import ChapterInstallation from "./sites/md/01-installation.mdx"
+import ChapterHTML from "./sites/md/02-0-html.mdx"
+import ChapterHTMLElements from "./sites/md/02-1-html-elements.mdx"
+import ChapterHTMLAttributes from "./sites/md/02-2-html-attributes.mdx"
+import ChapterCSS from "./sites/md/03-0-css.mdx"
+import ChapterCSSSelectors from "./sites/md/03-1-css-selectors.mdx"
+import ChapterCSSBoxModel from "./sites/md/03-2-css-box-model.mdx"
+import ChapterCSSAnimations from "./sites/md/03-3-css-animationen.mdx"
 import ChapterGit from "./sites/md/04-0-git.mdx"
 import ChapterGitBranches from "./sites/md/04-1-git-branches.mdx"
-import ICode from "./components/ICode"
 import ChapterGitMerges from "./sites/md/04-2-git-merges.mdx"
 import ChapterGitMergeConflicts from "./sites/md/04-3-git-merge-conflicts.mdx"
-import { useEffect, useRef } from "react"
-import ChapterTippsCenterImage from "./sites/tipps/05-1-center-img"
+import ChapterCSSCenterImage from "./sites/md/03-4-css-img.mdx"
 import ChapterTippsLayout from "./sites/tipps/05-2-layout"
 import TippsImgBackground from "./sites/tipps/img-background"
 import TippsImgNextToText from "./sites/tipps/img-next-to-text"
@@ -48,7 +49,7 @@ export default function App() {
             path="git-merge-conflicts"
             element={<ChapterGitMergeConflicts />}
           />
-          <Route path="tipp-images" element={<ChapterTippsCenterImage />} />
+          <Route path="tipp-images" element={<ChapterCSSCenterImage />} />
           <Route path="tipp-flexbox" element={<ChapterTippsLayout />} />
           <Route path="img-background" element={<TippsImgBackground />} />
           <Route path="img-next-to-text" element={<TippsImgNextToText />} />
