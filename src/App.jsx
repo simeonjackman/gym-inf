@@ -25,7 +25,7 @@ import ChapterJavascriptFor from "./sites/html/06-1-javascript-for"
 import ChapterJavascriptReturn from "./sites/html/06-2-javascript-return"
 import ChapterJavascriptLists from "./sites/html/06-3-javascript-lists"
 import ChapterJavascriptASCII from "./sites/md/06-4-javascript-ascii.mdx"
-import ChapterJavascriptSwitches from "./sites/html/06-5-javascript-switches"
+import ChapterJavascriptSwitches from "./sites/md/06-5-javascript-switches.mdx"
 
 export default function App() {
   return (
