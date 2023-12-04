@@ -6,10 +6,26 @@ import ICode from "../../components/ICode"
 import LCode from "../../components/LCode"
 import Tag from "../../components/Tag"
 import Video from "../../components/Video"
+import Markdown from "react-markdown"
+import Content from "./test.mdx"
 
 export default function ChapterJavascriptASCII() {
   return (
     <Chapter>
+      <Content />
+      <Markdown>{`
+## ASCII-Codes in Javascript
+        
+~~~javascript
+console.log("Hello, World")
+~~~
+
+Der ASCII-Code ist ein Code der jedem Zeichen eine Zahl zuweist. Das
+braucht der Cumputer da er wissen muss welches Zeichen er darstellen
+soll, denn der Computer kann selber nur mit Zahlen umgehen.
+
+`}
+      </Markdown>
       <h2>ASCII-Codes in Javascript</h2>
       <section>
         Der ASCII-Code ist ein Code der jedem Zeichen eine Zahl zuweist. Das
