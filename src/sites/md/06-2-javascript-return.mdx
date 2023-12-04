@@ -1,13 +1,13 @@
-import {Section} from "../../components/MarkdownComponents.jsx"
 import Example from "../../components/Example.jsx"
 import Chapter from "../../components/Chapter.jsx"
-
 
 <Chapter>
 
 ## Javascript Rückgabewerte (`return`)
 
-Funktionen haben einen Rückgabewert, das heisst sie geben einen Wert an die Stelle zurück, wo die Funktion aufgerufen wurde. Sie haben das selber im Code schon oft verwendet.
+Funktionen haben einen Rückgabewert, das heisst sie geben einen Wert an die
+Stelle zurück, wo die Funktion aufgerufen wurde. Sie haben das selber im Code
+schon oft verwendet.
 
 <Example title="Beispiel: In Kleinbuchstaben umwandeln">
 ```javascript
@@ -15,32 +15,41 @@ const letterCapitalA = "A"
 const letterSmallA = letterCapitalA.toLowerCase()
 ```
 
-Was hier in der Zeile zwei passiert, ist dass eine Funktion ausgeführt wird, und die Kleinbuchstabenversion von einem Text zurück gibt. Diesen Rückgabewert wird dann in einer neuen Variable gespeichert.
+Was hier in der Zeile zwei passiert, ist dass eine Funktion ausgeführt wird, und
+die Kleinbuchstabenversion von einem Text zurück gibt. Diesen Rückgabewert wird
+dann in einer neuen Variable gespeichert.
+
 </Example>
 
 ### Eigene Rückgabewerte erstellen
 
-In eigenen Funktionen können Sie auch selber Rückgabewerte schreiben, damit können Sie Werte aus einer Funktion an den Aufrufer zurückgeben.
+In eigenen Funktionen können Sie auch selber Rückgabewerte schreiben, damit
+können Sie Werte aus einer Funktion an den Aufrufer zurückgeben.
 
 <Example title="Beispiel: Wahr/Falsch Funktion">
 
-Sollten Sie eine Funktion schreiben wollen, die entscheidet ob etwas ist, oder nicht, möchten Sie einen Wahrheitswert (`boolean`) zurückgeben.
-  
+Sollten Sie eine Funktion schreiben wollen, die entscheidet ob etwas ist, oder
+nicht, möchten Sie einen Wahrheitswert (`boolean`) zurückgeben.
+
 ```javascript
 function containsNumber(args) {
-const input = args
-for ( let i = 0; i < input.length; i++ ) {
-  const currentElement = input[i]
-  const asciiCode = currentElement.charCodeAt(0)
-  if (48 <= asciiCode && asciiCode <= 57) {
-    return true
+  const input = args
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const asciiCode = currentElement.charCodeAt(0)
+    if (48 <= asciiCode && asciiCode <= 57) {
+      return true
+    }
   }
-}
-return false
+  return false
 }
 ```
 
-Diese Funktion geht die Eingabe Zeichen für Zeichen durch, und sobald ein Zeichen kommt dass eine Ziffer ist, gibt die Funktion <pre>true</pre> zurück und bricht ab. Wird keine Ziffer gefunden, wird ganz am Ende <pre>false</pre> zurückgegeben. Diese Funktion kann uns also sagen ob in einem Text eine Zahl vorkommt oder nicht.
+Diese Funktion geht die Eingabe Zeichen für Zeichen durch, und sobald ein
+Zeichen kommt dass eine Ziffer ist, gibt die Funktion <pre>true</pre> zurück und
+bricht ab. Wird keine Ziffer gefunden, wird ganz am Ende <pre>false</pre>
+zurückgegeben. Diese Funktion kann uns also sagen ob in einem Text eine Zahl
+vorkommt oder nicht.
 
 ```javascript
 if (containsNumber("ABCDEF 4 abcdef")) {
@@ -50,7 +59,10 @@ if (containsNumber("ABCDEF 4 abcdef")) {
 }
 ```
 
-So können wir dann Funktionen die wir selber erstellt haben, verwenden um Logik in den Code zu bringen. Man kann damit die Logik in deskriptiven Code auslagern, und muss die "komplexen" `if`s nicht immer lesen.
+So können wir dann Funktionen die wir selber erstellt haben, verwenden um Logik
+in den Code zu bringen. Man kann damit die Logik in deskriptiven Code auslagern,
+und muss die "komplexen" `if`s nicht immer lesen.
+
 </Example>
 
 </Chapter>
