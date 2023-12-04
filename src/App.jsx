@@ -1,4 +1,3 @@
-import "highlight.js/styles/default.min.css"
 import { Routes, Route, Link, Outlet } from "react-router-dom"
 import ChapterInstallation from "./sites/html/01-installation"
 import ChapterHTMLElements from "./sites/html/02-1-html-elements"
@@ -16,18 +15,16 @@ import ChapterGitMergeConflicts from "./sites/html/04-3-git-merge-conflicts"
 import { useEffect, useRef } from "react"
 import ChapterTippsCenterImage from "./sites/tipps/05-1-center-img"
 import ChapterTippsLayout from "./sites/tipps/05-2-layout"
-import Tipp from "./components/Tipp"
 import TippsImgBackground from "./sites/tipps/img-background"
 import TippsImgNextToText from "./sites/tipps/img-next-to-text"
 import ChapterJavascriptIntroduction from "./sites/html/05-0-javascript"
 import ChapterJavascriptChangePage from "./sites/html/05-1-javascript-change-page"
 import ChapterJavascriptTextToNumbers from "./sites/html/05-2-javascript-text-to-numbers"
-import hljs from "highlight.js"
 import ChapterJavascriptIf from "./sites/html/06-0-javascript-if"
 import ChapterJavascriptFor from "./sites/html/06-1-javascript-for"
 import ChapterJavascriptReturn from "./sites/html/06-2-javascript-return"
 import ChapterJavascriptLists from "./sites/html/06-3-javascript-lists"
-import ChapterJavascriptASCII from "./sites/html/06-4-javascript-ascii"
+import ChapterJavascriptASCII from "./sites/md/06-4-javascript-ascii.mdx"
 import ChapterJavascriptSwitches from "./sites/html/06-5-javascript-switches"
 
 export default function App() {
@@ -254,8 +251,4 @@ function ChapterIndex() {
       </ol>
     </>
   )
-}
-
-function Tips() {
-  return <></>
 }
