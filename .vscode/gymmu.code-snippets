@@ -79,6 +79,15 @@
 		],
 		"description": "Erstellt eine Gruppe von Tests für eine Aufgabe."
 	},
+	"[gymmu-admin] Imports für mdx": {
+		"scope": "markdown",
+		"prefix": "import",
+		"body": [
+			"import Example from \"../../components/Example.jsx\"",
+			"import Chapter from \"../../components/Chapter.jsx\""
+		],
+		"description": "Importiert die Standart imports die in diesem Projekt verwendet werden."
+	},
 	"[gyminf] Code Umgebung mit Syntaxhighlight": {
 		"scope": "javascriptreact",
 		"prefix": "code",
