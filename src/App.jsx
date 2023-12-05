@@ -15,9 +15,9 @@ import ChapterGitBranches from "./sites/md/04-1-git-branches.mdx"
 import ChapterGitMerges from "./sites/md/04-2-git-merges.mdx"
 import ChapterGitMergeConflicts from "./sites/md/04-3-git-merge-conflicts.mdx"
 import ChapterCSSCenterImage from "./sites/md/03-4-css-img.mdx"
-import ChapterTippsLayout from "./sites/tipps/05-2-layout"
-import TippsImgBackground from "./sites/tipps/img-background"
-import TippsImgNextToText from "./sites/tipps/img-next-to-text"
+import ChapterCSSLayout from "./sites/md/03-5-css-layout.mdx"
+import ChapterCSSImgBackground from "./sites/md/03-6-css-img-background.mdx"
+import ChapterCSSImgNextToText from "./sites/md/03-7-css-img-next-to-text.mdx"
 import ChapterJavascriptIntroduction from "./sites/md/05-0-javascript.mdx"
 import ChapterJavascriptChangePage from "./sites/md/05-1-javascript-change-page.mdx"
 import ChapterJavascriptTextToNumbers from "./sites/md/05-2-javascript-text-to-numbers.mdx"
@@ -50,9 +50,12 @@ export default function App() {
             element={<ChapterGitMergeConflicts />}
           />
           <Route path="tipp-images" element={<ChapterCSSCenterImage />} />
-          <Route path="tipp-flexbox" element={<ChapterTippsLayout />} />
-          <Route path="img-background" element={<TippsImgBackground />} />
-          <Route path="img-next-to-text" element={<TippsImgNextToText />} />
+          <Route path="tipp-flexbox" element={<ChapterCSSLayout />} />
+          <Route path="img-background" element={<ChapterCSSImgBackground />} />
+          <Route
+            path="img-next-to-text"
+            element={<ChapterCSSImgNextToText />}
+          />
           <Route
             path="javascript"
             element={<ChapterJavascriptIntroduction />}
