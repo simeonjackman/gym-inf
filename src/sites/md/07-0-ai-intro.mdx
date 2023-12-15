@@ -7,6 +7,8 @@ import Presentation, {
   Fragment,
 } from "../../components/Reveal"
 
+import Matter from "../../components/Matter"
+
 <Chapter>
 
 ## Arbeiten mit KI
@@ -26,75 +28,71 @@ an einige Grundregeln halten.
 <VSpace space="2rem" />
 
 <Presentation>
-  <Slide>
-    <h2>KI als Assistent</h2>
-    <Basement>
-      <Fragment>Macht die Arbeit einfacher</Fragment>
-      <Fragment>Macht die Arbeit effizienter</Fragment>
-      <Fragment>Übernimmt monotone Aufgaben</Fragment>
-      <Fragment>Vereinfacht das Nachschlagen</Fragment>
-      <Fragment>Kann die Kreativität fördern</Fragment>
-    </Basement>
-    <Basement>Jedoch nur wenn die KI richtig eingesetzt wird!</Basement>
-  </Slide>
-  <Slide>
-    <h2>KI richtig einsetzen</h2>
-        <h4>Gedanken umformulieren</h4>
-    <Basement>
-      <Fragment>
-        ```text
-        Wie kann ich alle e's aus einem Text löschen?
-        ```
-      </Fragment>
-      <Fragment>
-        Fragen Sie Codeium wie man diese Aufgabe lösen kann, die KI wird Ihnen dann sogar Code zur Lösung dazu geben.
-      </Fragment>
-    </Basement>
-    <Basement>
-      
+<Slide>
+<h2>KI als Assistent</h2>
+<Basement>
+    <Fragment>Macht die Arbeit einfacher</Fragment>
+    <Fragment>Macht die Arbeit effizienter</Fragment>
+    <Fragment>Übernimmt monotone Aufgaben</Fragment>
+    <Fragment>Vereinfacht das Nachschlagen</Fragment>
+    <Fragment>Kann die Kreativität fördern</Fragment>
+</Basement>
+<Basement>Jedoch nur wenn die KI richtig eingesetzt wird!</Basement>
+</Slide>
+<Slide>
+<h2>KI richtig einsetzen</h2>
+<h4>Gedanken umformulieren</h4>
+<Basement>
+    <Fragment>
+    ```text
+    Wie kann ich alle e's aus einem Text löschen?
+    ```
+    </Fragment>
+    <Fragment>
+    Fragen Sie Codeium wie man diese Aufgabe lösen kann, die KI wird Ihnen dann sogar Code zur Lösung dazu geben.
+    </Fragment>
+</Basement>
+<Basement>      
 ```text
 Um alle "e"s aus einem Text zu löschen, kannst du die
 replace-Methode verwenden.
 ```
-      </Basement>
-      <Basement>
-       Wenn Sie nicht verstehen wie das geht, oder es noch nicht in Ihr aktuelles Wissen passt, dann können Sie die KI auch nach einer anderen Formulierung der Aufgabe fragen.
-      </Basement>
-      <Basement>
-      ```text
-      Wie kann ich das mit schleifen machen?
-      ```
-      
-    </Basement>
-    <Basement>
-        ```text
-        Um alle "e"s aus einem Text mit einer Schleife
-        zu entfernen, kannst du die einzelnen Zeichen 
-        des Textes überprüfen und nur diejenigen 
-        hinzufügen, die nicht "e" sind. 
-        ```
-    </Basement>
-    <Basement>
-      Sie können dann auch direkt nach dem Code fragen. Dabei sollten Sie dann aber die Programmiersprache angeben, in der Sie arbeiten.
-      </Basement>
-      <Basement>
-      ```javascript
-      let text = "Dies ist ein Beispieltext";
-      let textWithoutE = "";
-      for (let i = 0; i < text.length; i++) {
-          if (text[i] !== "e") {
-              textWithoutE += text[i];
-          }
-      }
-
-      console.log(textWithoutE);
-      ```
-     </Basement>
-     <Basement>
-        Dieser Code muss dann normalerweise noch an das eigene Projekt angepasst werden. Es kann jedoch eine gute Starthilfe sein.
-     </Basement>
-
-  </Slide>
+</Basement>
+<Basement>
+    Wenn Sie nicht verstehen wie das geht, oder es noch nicht in Ihr aktuelles Wissen passt, dann können Sie die KI auch nach einer anderen Formulierung der Aufgabe fragen.
+</Basement>
+<Basement>
+```text
+Wie kann ich das mit schleifen machen?
+```
+</Basement>
+<Basement>
+```text
+Um alle "e"s aus einem Text mit einer Schleife
+zu entfernen, kannst du die einzelnen Zeichen 
+des Textes überprüfen und nur diejenigen 
+hinzufügen, die nicht "e" sind. 
+```
+</Basement>
+<Basement>
+    Sie können dann auch direkt nach dem Code fragen. Dabei sollten Sie dann aber die Programmiersprache angeben, in der Sie arbeiten.
+</Basement>
+<Basement>
+```javascript
+let text = "Dies ist ein Beispieltext";
+let textWithoutE = "";
+for (let i = 0; i < text.length; i++) {
+    if (text[i] !== "e") {
+        textWithoutE += text[i];
+    }
+}
+console.log(textWithoutE);
+```
+</Basement>
+<Basement>
+    Dieser Code muss dann normalerweise noch an das eigene Projekt angepasst werden. Es kann jedoch eine gute Starthilfe sein.
+</Basement>
+</Slide>
 
 <Slide>
   <h2>Was muss man beachten?</h2>
