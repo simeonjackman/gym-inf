@@ -11,11 +11,11 @@ import Matter from "../../components/Matter"
 import RPlayer from "../../components/Remotion"
 import Outro from "../../components/videos/Outro"
 
+import Pong from "../../examples/Pong"
+
 <Chapter>
 
 ## Arbeiten mit KI
-
-<Matter />
 
 Seit der Erfindung von LLMs (Large Language Models) sind viele Aufgaben in der
 Schule deutlich einfacher geworden. Man kann gewisse Hausaufgaben sehr einfach
@@ -32,14 +32,6 @@ an einige Grundregeln halten.
 <VSpace space="2rem" />
 
 <Presentation>
-<Slide>
-<Basement>
-<h1>Awesome Animations</h1>
-</Basement>
-<Basement>
-<RPlayer videoComponent={Outro} />
-</Basement>
-</Slide>
 <Slide>
 <h2>KI als Assistent</h2>
 <Basement>
@@ -133,6 +125,14 @@ console.log(textWithoutE);
   <Basement>
     Die KI kann das bearbeiten von Aufgaben erleichtern, das Lösen von komplexen
     Problemen bleibt aber bei **uns**.
+  </Basement>
+</Slide>
+
+<Slide>
+  <h2>Beispiel: Pong</h2>
+  <Basement>
+    <Pong />
+
   </Basement>
 </Slide>
 
