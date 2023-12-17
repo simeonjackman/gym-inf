@@ -1,0 +1,176 @@
+import Chapter from "../../components/Chapter"
+import Example from "../../components/Example"
+import VSpace from "../../components/VSpace"
+import Presentation, {
+  Slide,
+  Basement,
+  Fragment,
+} from "../../components/Reveal"
+
+import Matter from "../../components/Matter"
+import RPlayer from "../../components/Remotion"
+import Outro from "../../components/videos/Outro"
+
+import Pong from "../../examples/Pong"
+
+<Chapter>
+
+## Pong mit KI erstellen
+
+Wir möchten das Spiel Pong mit der Hilfe von Codeium erstellen. Dafür starten
+wir ein komplett neues Projekt in VS Code. Wir öffnen also einen neuen Ordner
+`pong-with-ai`. Und erstellen gleich eine neue Datei `index.html` und öffnen
+diese mit dem LiveServer.
+
+Den Inhalt von dieser Datei können wir uns dann von Codeium erzeugen lassen. Je
+spezifischer wir sind, desto einfacher ist es dann in dem Projekt weiter zu
+arbeiten. Dafür drücken wir die Tasten `Ctrl + Shift + P` und suchen nach
+`Codeium: Command`. Wenn wir diesen Befehl ausführen, öffnet sich ein Fenster,
+wo wir unsere Anfrage an die KI stellen können. Die Anfrage sollte dann so
+spezifisch und genau wie möglich sein, dass ist dort wo dann das Expertenwissen
+einfliesst.
+
+<Example title="Mögliche Anfrage">
+
+So könnte eine mögliche Anfrage aussehen:
+
+```text
+Erstelle eine HTML-Datei mit dem Titel 'Pong', einem Spielstand und
+einem dunklen canvas element. Diese Datei soll auch eine externe
+Javascript-Datei names game.js einbinden.
+```
+
+Das sollte uns mal die Webseite erstellen wo das Spiel dann angezeigt wird. Es
+ist wichtig diesen Code genau anzuschauen und versuchen zu verstehen was der
+Code macht. Wenn wir zufrieden sind, können wir den Code akzeptieren und weiter
+machen.
+
+Es ist hier natürlich auch möglich leichte Änderungen vorzunehmen, also
+Variablem umbenennen oder Stiele ändern. Sie sehen dann auch sehr schnell dass
+die KI nicht alles so macht wie wir das gelernt haben, das liegt vor allem daran
+dass es in der Webentwicklung sehr viele Möglichkeiten gibt etwas zu machen, und
+wir haben uns aber für nur einen Weg entschieden. Bei dem Beispiel kann es sehr
+gut sein das die Styles direkt im HTML sind, und nicht in einer externen Datei.
+Wenn Sie die Anfrage spezifischer formulieren, dann können Sie die Datei auch
+extern erhalten.
+
+An solchen Dingen sollten Sie sehen, wie wichtig es ist mehr über die Probleme
+zu wissen und das ganze Hintergrundwissen zu haben. Denn Sie als Expert\*in
+müssen das System kontrollieren dass Sie entwickeln möchten, nur dadurch bleibt
+das System unterhaltbar und auch veränderbar.
+
+</Example>
+
+### Game-Loop erstellen
+
+<section>
+
+Computerspiele funktionieren vom Prinzip her sehr einfach. Es gibt einen
+Spielzustand der Im Code verwaltet wird, und es gibt eine Darstellung von diesem
+Zustand, der in jedem Frame neu gezeichnet wird. Das wird in einem Game-Loop
+verwaltet, und dieses können wir uns auch von der KI erstellen lassen.
+
+```text
+Erstelle ein GameLoop, das das Spiel in jedem Frame neu zeichnet.
+Und die GameObjects anpasst.
+```
+
+Diese Code alleine gibt uns noch nicht so viel vor, er erstellt erst das
+Grundgerüst das wir für das Spiel brauchen. Wir können nun aber Spiel-Objekte
+hinzufügen und diese dann auch zeichnen lassen.
+
+</section>
+
+### Ball hinzufügen
+
+<section>
+
+Als erstes möchten wir mal einen Ball ins Spiel einfügen und diesen dann zum
+bewegen bringen.
+
+Wir versuchen hier mit einer weiteren Methode die KI zu verwenden. Wir können
+das auch so machen das wir Kommentare in der Datei hinterlassen, und die KI dann
+den Code dafür schreiben lassen.
+
+Wir können also ganz oben in der Datei folgenden Kommentar hinterlassen, und uns
+den Code generieren lassen.
+
+```javascript
+// Erstelle eine Spiel-Objekt Ball in der Mitte des Spielfelds
+```
+
+Mit `Tab` können wir den Vorschlag von der KI akzeptieren. Wenn wir mit der Maus
+darüber gehen, können wir uns auch noch andere Vorschläge anzeigen lassen.
+
+Mit diesen Kommentaren ist der Code dann auch gleich dokumentiert, und man kann
+alles sehr modular erstellen lassen. So bleibt die Expertenrolle bei uns und
+nicht bei der KI.
+
+</section>
+
+### Spielfeld und globale Variablen
+
+<section>
+
+Als nächstes möchten wir den Ball noch bewegen können. Dafür brauchen wir
+Zugriff auf das Spielfeld und die Spielobjekte in allen Funktionen, wir müssen
+also sicher sein, dass der Ball und das `Canvas` global sind (also nicht in
+einer Funktion drin). Am besten erstellen wir diese Objekte ganz oben in der
+Datei.
+
+Hier bräuchten Sie jetzt mehr Expertenwissen darüber wie diese Elemente
+funktionieren. Wir versuchen es hier ganz kurz zu erklären.
+
+#### Canvas und Context
+
+Das Canvas-Element das Sie bereits in HMTL erstellt haben, ist das Element
+worauf wir unser Spiel zeichnen können. Betrachten Sie dieses als Bildschirm
+worauf das Spiel dargestellt wird. Weil wir ein 2D-Spiel erstellen, müssen wir
+noch den Kontext von diesem Canvas holen, damit der Computer weiss wie er darauf
+zeichneen soll.
+
+Diese beiden Elemente können wir einfach mit dem folgenden Kommentar von der KI
+erstellen lassen.
+
+```javascript
+// Hole das Canvas-Element aus dem HTML
+```
+
+Das sollte uns die beiden globalen Variablen geben die wir überall brauchen um
+das Spiel zeichnen zu lassen.
+
+</section>
+
+<Example title="Ball bewegen">
+
+Jetzt wo wir alle Elemente haben, können wir die Funktionen definieren die den
+Ball bewegen. Die KI hat Ihnen im Game-Loop vermutlich 2 Funktionen erstellt,
+die `update` und `draw` heissen. Diese müssen wir nun noch implementieren.
+
+Erstellen Sie eine neue Funktion `update` in der Datei `game.js` und starten Sie
+diese Funktion mit folgendem Kommentar:
+
+```javascript
+// Aktualisiere die Position des Balls
+```
+
+Wenn Sie zufrieden mit der Funktion sind, können Sie die Funktion `draw` mit
+folgendem Kommentar erstellen:
+
+```javascript
+// Zeichne den Ball auf dem Spielfeld
+```
+
+Jetzt müssen Sie natürlich noch sicherstellen dass der Code auch überall richtig
+funktioniert, heisst Sie müssen überprüfen ob die richtigen Variablen und auch
+funktionen verwendet werden.
+
+</Example>
+
+### Ball reflektieren
+
+Wenn Sie den Code soweit haben, dann versuchen Sie an der richtigen Stelle den
+Kommentar einzufügen, um den Ball an der Wand zu reflektieren. Schauen Sie sich
+dort die Lösung der KI genau an, und überlegen Sie ob das Sinn ergibt.
+
+</Chapter>
