@@ -18,8 +18,8 @@ export default function Pong() {
       y: canvas.height / 2,
       radius: 10,
       speed: 5,
-      dx: 5,
-      dy: 5,
+      dx: 0,
+      dy: 0,
     }
 
     // create a paddle object on the right side of the canvas
@@ -150,17 +150,23 @@ export default function Pong() {
       // Handle keypress events
       keyPressEvents.forEach(function (keyPressEvent) {
         // Update the position of the paddle based on the key press event
-        if (keyPressEvent === "q") {
+        if (keyPressEvent === "e") {
           paddle.y -= 10
-        } else if (keyPressEvent === "a") {
+        } else if (keyPressEvent === "d") {
           paddle.y += 10
         }
 
         // Update the position of the second paddle based on the key press event
-        if (keyPressEvent === "e") {
+        if (keyPressEvent === "q") {
           paddle2.y -= 10
-        } else if (keyPressEvent === "d") {
+        } else if (keyPressEvent === "a") {
           paddle2.y += 10
+        }
+
+        // Set random direction of the ball when s is pressed
+        if (keyPressEvent === "s") {
+          ball.dx = Math.random() * 10 - 5
+          ball.dy = Math.random() * 10 - 5
         }
       })
 
