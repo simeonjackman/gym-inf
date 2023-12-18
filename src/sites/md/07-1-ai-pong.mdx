@@ -27,7 +27,7 @@ spezifischer wir sind, desto einfacher ist es dann in dem Projekt weiter zu
 arbeiten. Dafür drücken wir die Tasten `Ctrl + Shift + P` und suchen nach
 `Codeium: Command`. Wenn wir diesen Befehl ausführen, öffnet sich ein Fenster,
 wo wir unsere Anfrage an die KI stellen können. Die Anfrage sollte dann so
-spezifisch und genau wie möglich sein, dass ist dort wo dann das Expertenwissen
+spezifisch und genau wie möglich sein, das ist dort wo dann das Expertenwissen
 einfliesst.
 
 <Example title="Mögliche Anfrage">
@@ -40,24 +40,24 @@ einem dunklen canvas element. Diese Datei soll auch eine externe
 Javascript-Datei names game.js einbinden.
 ```
 
-Das sollte uns mal die Webseite erstellen wo das Spiel dann angezeigt wird. Es
-ist wichtig diesen Code genau anzuschauen und versuchen zu verstehen was der
+Das sollte uns mal die Webseite erstellen, wo das Spiel dann angezeigt wird. Es
+ist wichtig diesen Code genau anzuschauen und versuchen zu verstehen, was der
 Code macht. Wenn wir zufrieden sind, können wir den Code akzeptieren und weiter
 machen.
 
 Es ist hier natürlich auch möglich leichte Änderungen vorzunehmen, also
-Variablem umbenennen oder Stiele ändern. Sie sehen dann auch sehr schnell dass
-die KI nicht alles so macht wie wir das gelernt haben, das liegt vor allem daran
-dass es in der Webentwicklung sehr viele Möglichkeiten gibt etwas zu machen, und
-wir haben uns aber für nur einen Weg entschieden. Bei dem Beispiel kann es sehr
-gut sein das die Styles direkt im HTML sind, und nicht in einer externen Datei.
-Wenn Sie die Anfrage spezifischer formulieren, dann können Sie die Datei auch
-extern erhalten.
+Variablen umbenennen oder Stiele ändern. Sie sehen dann auch sehr schnell, dass
+die KI nicht alles so macht wie wir das gelernt haben, das liegt vor allem
+daran, dass es in der Webentwicklung sehr viele Möglichkeiten gibt etwas zu
+machen, und wir haben uns aber für nur einen Weg entschieden. Bei dem Beispiel
+kann es sehr gut sein, dass die Stiele direkt im HTML sind, und nicht in einer
+externen Datei. Wenn Sie die Anfrage spezifischer formulieren, dann können Sie
+die Datei auch extern erhalten.
 
 An solchen Dingen sollten Sie sehen, wie wichtig es ist mehr über die Probleme
 zu wissen und das ganze Hintergrundwissen zu haben. Denn Sie als Expert\*in
-müssen das System kontrollieren dass Sie entwickeln möchten, nur dadurch bleibt
-das System unterhaltbar und auch veränderbar.
+müssen das System kontrollieren, dass Sie entwickeln möchten, nur dadurch bleibt
+das System wartbar und flexibel.
 
 </Example>
 
@@ -66,7 +66,7 @@ das System unterhaltbar und auch veränderbar.
 <section>
 
 Computerspiele funktionieren vom Prinzip her sehr einfach. Es gibt einen
-Spielzustand der Im Code verwaltet wird, und es gibt eine Darstellung von diesem
+Spielzustand der im Code verwaltet wird, und es gibt eine Darstellung von diesem
 Zustand, der in jedem Frame neu gezeichnet wird. Das wird in einem Game-Loop
 verwaltet, und dieses können wir uns auch von der KI erstellen lassen.
 
@@ -75,8 +75,8 @@ Erstelle ein GameLoop, das das Spiel in jedem Frame neu zeichnet.
 Und die GameObjects anpasst.
 ```
 
-Diese Code alleine gibt uns noch nicht so viel vor, er erstellt erst das
-Grundgerüst das wir für das Spiel brauchen. Wir können nun aber Spiel-Objekte
+Dieser Code alleine gibt uns noch nicht so viel vor, er erstellt erst das
+Grundgerüst, das wir für das Spiel brauchen. Wir können nun aber Spiel-Objekte
 hinzufügen und diese dann auch zeichnen lassen.
 
 </section>
@@ -85,12 +85,12 @@ hinzufügen und diese dann auch zeichnen lassen.
 
 <section>
 
-Als erstes möchten wir mal einen Ball ins Spiel einfügen und diesen dann zum
-bewegen bringen.
+Als Erstes möchten wir mal einen Ball ins Spiel einfügen und diesen dann zum
+Bewegen bringen.
 
 Wir versuchen hier mit einer weiteren Methode die KI zu verwenden. Wir können
-das auch so machen das wir Kommentare in der Datei hinterlassen, und die KI dann
-den Code dafür schreiben lassen.
+das auch so machen, das wir Kommentare in der Datei hinterlassen, und die KI
+dann den Code dafür schreiben lassen.
 
 Wir können also ganz oben in der Datei folgenden Kommentar hinterlassen, und uns
 den Code generieren lassen.
@@ -112,14 +112,14 @@ nicht bei der KI.
 
 <section>
 
-Als nächstes möchten wir den Ball noch bewegen können. Dafür brauchen wir
+Als Nächstes möchten wir den Ball noch bewegen können. Dafür brauchen wir
 Zugriff auf das Spielfeld und die Spielobjekte in allen Funktionen, wir müssen
 also sicher sein, dass der Ball und das `Canvas` global sind (also nicht in
 einer Funktion drin). Am besten erstellen wir diese Objekte ganz oben in der
 Datei.
 
-Hier bräuchten Sie jetzt mehr Expertenwissen darüber wie diese Elemente
-funktionieren. Wir versuchen es hier ganz kurz zu erklären.
+Um ein tieferes Verständnis davon zu erhalten, wie diese Elemente arbeiten,
+folgt nun eine kurze Erläuterung.
 
 #### Canvas und Context
 
@@ -127,7 +127,7 @@ Das Canvas-Element das Sie bereits in HMTL erstellt haben, ist das Element
 worauf wir unser Spiel zeichnen können. Betrachten Sie dieses als Bildschirm
 worauf das Spiel dargestellt wird. Weil wir ein 2D-Spiel erstellen, müssen wir
 noch den Kontext von diesem Canvas holen, damit der Computer weiss wie er darauf
-zeichneen soll.
+zeichnen soll.
 
 Diese beiden Elemente können wir einfach mit dem folgenden Kommentar von der KI
 erstellen lassen.
@@ -136,14 +136,14 @@ erstellen lassen.
 // Hole das Canvas-Element aus dem HTML
 ```
 
-Das sollte uns die beiden globalen Variablen geben die wir überall brauchen um
-das Spiel zeichnen zu lassen.
+Dies wird uns die erforderlichen globalen Variablen zur Verfügung stellen, die
+für das Zeichnen des Spiels an jeder Stelle benötigt werden.
 
 </section>
 
 <Example title="Ball bewegen">
 
-Jetzt wo wir alle Elemente haben, können wir die Funktionen definieren die den
+Jetzt wo wir alle Elemente haben, können wir die Funktionen definieren, die den
 Ball bewegen. Die KI hat Ihnen im Game-Loop vermutlich 2 Funktionen erstellt,
 die `update` und `draw` heissen. Diese müssen wir nun noch implementieren.
 
@@ -161,9 +161,9 @@ folgendem Kommentar erstellen:
 // Zeichne den Ball auf dem Spielfeld
 ```
 
-Jetzt müssen Sie natürlich noch sicherstellen dass der Code auch überall richtig
-funktioniert, heisst Sie müssen überprüfen ob die richtigen Variablen und auch
-funktionen verwendet werden.
+Jetzt müssen Sie natürlich noch sicherstellen, dass der Code auch überall
+richtig funktioniert, heisst Sie müssen überprüfen, ob die richtigen Variablen
+und auch Funktionen verwendet werden.
 
 </Example>
 
@@ -171,14 +171,14 @@ funktionen verwendet werden.
 
 <section>
 
-Wenn Sie den Code soweit haben, dann versuchen Sie an der richtigen Stelle den
+Wenn Sie den Code so weit haben, dann versuchen Sie an der richtigen Stelle den
 Kommentar einzufügen, um den Ball an der Wand zu reflektieren. Schauen Sie sich
-dort die Lösung der KI genau an, und überlegen Sie ob das Sinn ergibt.
+dort die Lösung der KI genau an, und überlegen Sie, ob das Sinn ergibt.
 
-Wir möchten den Ball aber nicht an allen Seiten reflektieren, sondern nur oben
-und unten. Wenn der Ball auf der Seite raus geht, dann soll er zurück in die
-Mitte gesetzt werden. Hier können wir dann auch die Richtung des Balls zufällig
-neu setzen.
+Wir wollen, dass der Ball nur an der oberen und unteren Kante reflektiert wird.
+Sollte der Ball das Spielfeld seitlich verlassen, wird er zur Mitte
+zurückgesetzt. Dabei soll auch die Richtung des Balls zufällig neu bestimmt
+werden.
 
 </section>
 
@@ -203,9 +203,9 @@ hinterlassen, um den Spieler zu zeichnen.
 // Zeichne den rechten Spieler
 ```
 
-Nun müssen wir noch das verhalten von diesem Spielobjekt definieren. Das können
-wir in der `update`-Funktion machen, wo wir bereits das reflektieren des Balls
-haben. Hier ist es so das wir nach dem anpassen der Ballposition prüfen möchten,
+Nun müssen wir noch das Verhalten von diesem Spielobjekt definieren. Das können
+wir in der `update`-Funktion machen, wo wir bereits das Reflektieren des Balls
+haben. Hier ist es so das wir nach dem Anpassen der Ballposition prüfen möchten,
 ob der Ball mit dem Spieler kollidiert. Wenn ja, soll der Ball reflektiert
 werden.
 
@@ -214,7 +214,7 @@ werden.
 ```
 
 Jetzt brauchen wir nur noch die Möglichkeit den Spieler über die Tastatur zu
-steueren. Dafür brauchen wir wieder mehr Expertenwissen.
+steuern. Dafür brauchen wir wieder mehr Expertenwissen.
 
 </section>
 
@@ -228,8 +228,8 @@ allerbeste Lösung geben, aber für eine bessere Lösung, ist deutlich mehr
 Expertenwissen nötig, dieses können wir in der kurzen Zeit noch nicht
 erarbeiten.
 
-Wir können also in der Datei `game.js` den folgenden Kommentar hinterlassen um
-auf Tastenklicks zu reagieren:
+In der Datei `game.js` können wir folgenden Kommentar einfügen, um auf
+Tastatureingaben zu reagieren:
 
 ```javascript
 // Höre auf Tastenklicks
@@ -251,10 +251,10 @@ erhalten, die dann auch erweiterbar ist.
 
 <Example title="Code verbessern lassen">
 
-Sollte der Code nicht das machen was Sie möchten, dann können Sie den Code
-anwählen, und mit dem `Codeium: Command` einen Verbesserungsvorschlag angeben
-lassen. Hier sollten Sie möglichst präzise in Expertensprache formulieren was
-Sie verbessern möchten.
+Sollte der Code nicht das tun, was Sie möchten, können Sie den Code auswählen
+und mit dem Befehl `Codeium: Command` einen Verbesserungsvorschlag anfordern.
+Hierbei sollten Sie möglichst präzise in Fachsprache formulieren, was Sie
+verbessern möchten.
 
 </Example>
 
@@ -262,17 +262,17 @@ Sie verbessern möchten.
 
 <section>
 
-Bei so einem einfachen Spiel wie Pong, können Sie den kompletten Code auch
-direkt erstellen lassen. Versuchen Sie das einmal indem Sie eine neue Datei
-`pong.html` erstellen, und dann mit `Codeium: Command` eine Prompt eingeben, die
-Ihnen das ganze Spiel erstellt. Schauen Sie sich den Code dannach gut an.
-Könnten Sie in dem Code noch gut Änderungen einbringen?
+Bei einem so einfachen Spiel wie Pong können Sie sich den kompletten Code auch
+direkt erstellen lassen. Versuchen Sie das, indem Sie eine neue Datei
+`pong.html` anlegen und dann mit `Codeium: Command` eine Aufforderung eingeben,
+die Ihnen das gesamte Spiel erstellt. Schauen Sie sich den Code danach genau an.
+Könnten Sie in dem Code noch gut Änderungen vornehmen?
 
-Wenn Sie KI als Werkzeug einsetzen, dann sollten Sie immer wissen was Sie machen
-möchten. Das geht am besten wenn Sie nur kleine Stücke Code erstellen lassen,
-und diese so lange anpassen, bis der Code das macht was Sie gerne möchten. Das
-kann schnell komplex werden, je nachdem wie viele Interaktionen die
-verschiedenen Codestücke haben.
+Wenn Sie KI als Werkzeug einsetzen, sollten Sie immer wissen, was Sie machen
+möchten. Das funktioniert am besten, wenn Sie nur kleine Codeabschnitte
+erstellen lassen und diese so lange anpassen, bis der Code das tut, was Sie
+möchten. Dies kann schnell komplex werden, je nachdem, wie viele Interaktionen
+die verschiedenen Codeabschnitte haben.
 
 </section>
 
