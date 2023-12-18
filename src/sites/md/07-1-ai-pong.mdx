@@ -169,8 +169,93 @@ funktionen verwendet werden.
 
 ### Ball reflektieren
 
+<section>
+
 Wenn Sie den Code soweit haben, dann versuchen Sie an der richtigen Stelle den
 Kommentar einzufügen, um den Ball an der Wand zu reflektieren. Schauen Sie sich
 dort die Lösung der KI genau an, und überlegen Sie ob das Sinn ergibt.
+
+Wir möchten den Ball aber nicht an allen Seiten reflektieren, sondern nur oben
+und unten. Wenn der Ball auf der Seite raus geht, dann soll er zurück in die
+Mitte gesetzt werden. Hier können wir dann auch die Richtung des Balls zufällig
+neu setzen.
+
+</section>
+
+### Spieler erstellen
+
+<section>
+
+Wir brauchen nun noch 2 Spieler. Auch diese können wir von der KI erstellen
+lassen. Wir gehen wieder ganz oben in die Datei, direkt nach dem `Ball`. Dort
+können wir den folgenden Kommentar einfügen:
+
+```javascript
+// Erstele ein Spielerobjekt auf der rechten Seite
+```
+
+Das sollte uns auf der rechten Seite des Spielfelds einen Balken geben. Wir
+können diesen aber noch nicht sehen, weil er in der `draw`-Funktion noch nicht
+gezeichnet wird. Wir sollten also in der `draw`-Funktion einen Kommentar
+hinterlassen, um den Spieler zu zeichnen.
+
+```javascript
+// Zeichne den rechten Spieler
+```
+
+Nun müssen wir noch das verhalten von diesem Spielobjekt definieren. Das können
+wir in der `update`-Funktion machen, wo wir bereits das reflektieren des Balls
+haben. Hier ist es so das wir nach dem anpassen der Ballposition prüfen möchten,
+ob der Ball mit dem Spieler kollidiert. Wenn ja, soll der Ball reflektiert
+werden.
+
+```javascript
+// Reflektiere den Ball wenn er mit dem rechten Spieler kollidiert
+```
+
+Jetzt brauchen wir nur noch die Möglichkeit den Spieler über die Tastatur zu
+steueren. Dafür brauchen wir wieder mehr Expertenwissen.
+
+</section>
+
+### Spieler steuern
+
+<section>
+
+Der Webbrowser bietet bereits die Funktion auf Tastenklicks zu hören. Wir können
+das also global auf der ganzen Webseite machen. Das wird uns nicht die
+allerbeste Lösung geben, aber für eine bessere Lösung, ist deutlich mehr
+Expertenwissen nötig, dieses können wir in der kurzen Zeit noch nicht
+erarbeiten.
+
+Wir können also in der Datei `game.js` den folgenden Kommentar hinterlassen um
+auf Tastenklicks zu reagieren:
+
+```javascript
+// Höre auf Tastenklicks
+```
+
+Und dann innerhalb von dieser Funktion einen weiteren Kommentar:
+
+```javascript
+// Bewege den rechten Spieler mit Pfeiltasten auf und ab
+```
+
+Das sollte mehrheitlich gut funktionieren. Es kann aber sein das wir hier noch
+ein wenig tüfteln müssen, denn das Verhalten der Tastenklicks ist relativ
+komplex, und es kommt hier stark darauf an, wie das ganze implementiert wurde.
+Hier ist also wieder viel Expertenwissen notwendig, um eine gute Lösung zu
+erhalten, die dann auch erweiterbar ist.
+
+</section>
+
+<Example title="Code verbessern lassen">
+
+Sollte der Code nicht das machen was Sie möchten, dann können Sie den Code
+anwählen, und mit dem `Codeium: Command` einen Verbesserungsvorschlag angeben
+lassen. Hier sollten Sie möglichst präzise in Expertensprache formulieren was
+Sie verbessern möchten.
+
+</Example>
 
 </Chapter>
