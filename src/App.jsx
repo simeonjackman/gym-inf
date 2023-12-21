@@ -30,6 +30,7 @@ import ChapterJavascriptASCII from "./sites/md/06-4-javascript-ascii.mdx"
 import ChapterJavascriptSwitches from "./sites/md/06-5-javascript-switches.mdx"
 import ChapterAIIntro from "./sites/md/07-0-ai-intro.mdx"
 import ChapterAIPong from "./sites/md/07-1-ai-pong.mdx"
+import ChapterJavascriptObjects from "./sites/md/08-0-javascript-objects.mdx"
 
 export default function App() {
   return (
@@ -86,6 +87,10 @@ export default function App() {
           />
           <Route path="ai-intro" element={<ChapterAIIntro />} />
           <Route path="ai-pong" element={<ChapterAIPong />} />
+          <Route
+            path="javascript-objects"
+            element={<ChapterJavascriptObjects />}
+          />
         </Route>
       </Routes>
     </>
@@ -266,6 +271,14 @@ function ChapterIndex() {
             </li>
             <li>
               <Link to="ai-pong">Pong mit küstlicher Intelligenz</Link>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Javascript: Datenstrukturen
+          <ol>
+            <li>
+              <Link to="javascript-objects">Objekte</Link>
             </li>
           </ol>
         </li>
