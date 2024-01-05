@@ -31,6 +31,7 @@ import ChapterJavascriptSwitches from "./sites/md/06-5-javascript-switches.mdx"
 import ChapterAIIntro from "./sites/md/07-0-ai-intro.mdx"
 import ChapterAIPong from "./sites/md/07-1-ai-pong.mdx"
 import ChapterJavascriptObjects from "./sites/md/08-0-javascript-objects.mdx"
+import ChapterJavascriptObjectsAsData from "./sites/md/08-1-javascript-objects-as-data.mdx"
 
 export default function App() {
   return (
@@ -91,6 +92,10 @@ export default function App() {
           <Route
             path="javascript-objects"
             element={<ChapterJavascriptObjects />}
+          />
+          <Route
+            path="javascript-objects-as-data"
+            element={<ChapterJavascriptObjectsAsData />}
           />
         </Route>
       </Routes>
@@ -293,6 +298,9 @@ function ChapterIndex() {
           <ol>
             <li>
               <Link to="javascript-objects">Objekte</Link>
+            </li>
+            <li>
+              <Link to="javascript-objects-as-data">Objekte as Datenquelle</Link>
             </li>
           </ol>
         </li>

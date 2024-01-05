@@ -76,11 +76,30 @@ verwaltet die ganze Konfiguration im `JSON` Format.
 
 </section>
 
-    ### Einfache Simulation beschreiben
+    <Example title="Einfache Simulation beschreiben">
+    
+    Wir möchten eine einfache Simulation erstellen, in der wir einen Ball an
+    einer bestimmten Position erstellen, und diesen dann in eine Richtung
+    bewegen lassen. Der Ball wird dann an den Wänden reflektiert. Die Logik
+    übernimmt die Simulation für uns, die wurde bereits geschrieben. Wir müssen
+    nur noch die Eigenschaften des Balls eingeben.
 
+    In der Zelle unten, finden Sie die Simulation als `JSON` beschrieben.
+    Führen Sie die folgenden Änderungen hinzu.
 
+    1. Ändern Sie den Radius des Balls.
+    2. Der Ball soll sich nur in der horizontalen Richtung bewegen.
+    3. Der Ball soll sich nur in der vertikalen Richtung bewegen.
+    4. Ändern Sie die Startposition des Balls in die untere rechte Ecke.
+    5. Fügen Sie eine Farbe zum Ball hinzu.
+    6. Fügen Sie einen weiteren Ball hinzu.
 
-<SimulationCell />
+    <SimulationCell />
 
+    Es braucht natürlich den Code der die Simulation erst durchführbar macht.
+    In der Regel ist dies aber eine GameEngine oder ein anderes Framework, das
+    bereits existiert. Wir müssen dann nur noch die Objekte beschreiben.
+
+    </Example>
 
 </Chapter>
