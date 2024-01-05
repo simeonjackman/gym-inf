@@ -1,5 +1,5 @@
-import { Routes, Route, Link, Outlet } from "react-router-dom"
-import { useEffect, useRef } from "react"
+import { Routes, Route, Link, Outlet, useLocation } from "react-router-dom"
+import { useEffect, useRef, useLayoutEffect } from "react"
 import ICode from "./components/ICode"
 
 import ChapterPres from "./sites/md/00-pres.mdx"
@@ -35,6 +35,7 @@ import ChapterJavascriptObjects from "./sites/md/08-0-javascript-objects.mdx"
 export default function App() {
   return (
     <>
+      <Wrapper>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<ChapterIndex />} />
@@ -93,6 +94,19 @@ export default function App() {
           />
         </Route>
       </Routes>
+      </Wrapper>
+    </>
+  )
+}
+
+function Wrapper({children}) {
+    const location = useLocation()
+    useLayoutEffect(() => {
+      window.scrollTo(0, 0)
+    }, [location.pathname])
+  return (
+    <>
+      {children}
     </>
   )
 }
