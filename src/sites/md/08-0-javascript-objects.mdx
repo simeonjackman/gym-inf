@@ -7,19 +7,80 @@ import Presentation, {
   Fragment,
 } from "../../components/Reveal"
 
-import NotebookCell from "../../components/NotebookCell"
+import SimulationCell from "../../components/SimulationCell"
 
 <Chapter>
 
 ## Objekte in Javascript (`JSON`)
 
+<section>
+
 Objekte sind eine der grundlegenden Datenstrukturen in Javascript. Es gibt
 verschiedene Arten wie man Objekte in Javascript schreiben kann. Die einfachste
 Methode ist ein Objekt als `JSON` anzugeben. Diese Syntax ist so praktisch und
-einfach zu lesen, dass sehr viele Programme `JSON` auch nutzen um über das
+einfach zu lesen, dass sehr viele Programme `JSON` auch nutzen, um über das
 Internet zu kommunizieren oder das eigene Programm zu konfigurieren. VSCode
 verwaltet die ganze Konfiguration im `JSON` Format.
 
-<NotebookCell />
+</section>
+
+<Example title="Ball als Objekt">
+
+        Wenn wir einen Ball als Objekt beschreiben möchten, können wir das
+        durch seine Eigenschaften machen. Ein Ball hat einen Radius und eine
+        Position. Wir könnten auch noch eine Farbe dazu angeben. Als Objekt
+        geschrieben, könnte der Ball so aussehen:
+
+        ```javascript
+        const ball = {
+          radius: 10,
+          x: 100,
+          y: 100,
+        }
+        ```
+
+        Wir können also all die Eigenschaften von einem Objekt zusammen
+        gruppieren, und als eine logische Einheit angeben. Das macht es einfach
+        mit Objekten zu arbeiten, da alles in einem Platz ist, und wir so alles
+        direkt anschauen und verändern können. Man müsste das nicht unbedingt
+        so machen, man könnte auch einige Variablen einführen. Hier sieht man
+        aber sehr einfach dass dies schnell unpraktisch werden kann, da man
+        schnell die Übersicht verlieren kann.
+
+</Example>
+
+### JSON (JavaScript Object Notation)
+
+<section>
+
+        Wie oben bereits erwähnt wurde, nutzen viele Programme die
+        Kommunikation über `JSON`. Dieses Format ist fast genau gleich wie die
+        Objekte die wir in Javascript schreiben, zwingt uns aber dazu die
+        exaktere Syntax zu verwenden. In `JSON` muss alles mit `""` umfasst
+        werden, ausser es ist eine Zahl.
+
+        Der Ball von oben wird in `JSON` also so geschrieben:
+
+        ```JSON
+        {
+          "radius": 10,
+          "x": 100,
+          "y": 100
+        }
+        ```
+
+        In `JSON` können wir ein Objekt auch nicht einer Variablen zuordnen,
+        dafür können wir komplexere Objekte erstellen. Genau dafür ist `JSON`
+        auch gedacht, wir möchten damit die Daten von komplexen Sachverhalten
+        beschreiben.
+
+</section>
+
+    ### Einfache Simulation beschreiben
+
+
+
+<SimulationCell />
+
 
 </Chapter>
