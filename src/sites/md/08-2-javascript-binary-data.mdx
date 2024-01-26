@@ -3,6 +3,7 @@ import Example from "../../components/Example"
 import VSpace from "../../components/VSpace"
 
 import HexCell from "../../components/HexCell"
+import XORCell from "../../components/XORCell"
 
 <Chapter>
 
@@ -66,6 +67,37 @@ import HexCell from "../../components/HexCell"
     wieso dass Binärcode *praktisch* ist.
 
     </section>
+
+    <Example title="Beispiel: Verschlüsseln mit der XOR-Operation">
+
+    In dem folgenden Beispiel werden die Zeichenketten jeweils in ASCII
+    übersetzt, und dann im Binärformat dargestellt. Die dritte Zeile ist die
+    XOR-Operation der beiden ersten, das Resultat wird dann wieder in eine
+    Zeichenkette übersetzt und dargestellt.
+
+    Es ist an dem Beispiel einfach zu erkennen das es nicht möglich ist die
+    Verschlüsselung ohne Schlüssel zu knacken, da verschiedene Zeichen aus der
+    Eingabe, auf die gleiche Ausgabe geschickt werden. Das bedeutet dass Sie
+    die Verschlüsselung nur mit dem Schlüssel aufheben können.
+
+    <XORCell />
+
+    Nutzen Sie das Widget um die folgenden Fragen zu beantworten.
+
+    1. Was genau macht die XOR-Operation?
+    1. Was passiert wenn Sie den gleichen Schlüssel wie die Eingabe verwenden?
+    1. Was passiert wenn Sie mehrere Leerzeichen als Schlüssel verwenden? Wieso
+       passiert das?
+    1. Was passiert wenn Sie die gleichen Buchstaben im Schlüssel und in der
+       Eingabe verwenden, aber jeweils in der Klein- bzw. Grossbuchstabenform.
+    1. Können Sie die Eingabe und den Schlüssel so wählen, dass `0123456789`
+       herauskommt?
+    1. Wie können Sie die Verschlüsselung rückgängig machen?
+    1. Was ist ein schlechter Schlüssel für diese Art der Verschlüsselung und
+       wieso?
+    1. Wieso ist diese Art der Verschlüsselung praktisch für den Computer?
+    
+    </Example>
 
 </Chapter>
 
