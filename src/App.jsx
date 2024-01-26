@@ -33,6 +33,7 @@ import ChapterAIPong from "./sites/md/07-1-ai-pong.mdx"
 import ChapterJavascriptObjects from "./sites/md/08-0-javascript-objects.mdx"
 import ChapterJavascriptObjectsAsData from "./sites/md/08-1-javascript-objects-as-data.mdx"
 import ChapterJavascriptBinary from "./sites/md/08-2-javascript-binary-data.mdx"
+import ChapterJavascriptHexadecimal from "./sites/md/08-3-javascript-hex-data.mdx"
 
 export default function App() {
   return (
@@ -101,6 +102,10 @@ export default function App() {
           <Route
             path="javascript-binary-data"
             element={<ChapterJavascriptBinary />}
+          />
+          <Route
+            path="javascript-hex-data"
+            element={<ChapterJavascriptHexadecimal />}
           />
         </Route>
       </Routes>
@@ -308,7 +313,10 @@ function ChapterIndex() {
               <Link to="javascript-objects-as-data">Objekte as Datenquelle</Link>
             </li>
             <li>
-              <Link to="javascript-binary-data">Binäredaten und andere Formate</Link>
+              <Link to="javascript-binary-data">Binärsystem</Link>
+            </li>
+            <li>
+              <Link to="javascript-hex-data">Hexadezimalsystem</Link>
             </li>
           </ol>
         </li>
