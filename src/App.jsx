@@ -39,91 +39,101 @@ export default function App() {
   return (
     <>
       <Wrapper>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<ChapterIndex />} />
-          <Route path="pres" element={<ChapterPres />} />
-          <Route path="install" element={<ChapterInstallation />} />
-          <Route path="html" element={<ChapterHTML />} />
-          <Route path="html-elements" element={<ChapterHTMLElements />} />
-          <Route path="html-attributes" element={<ChapterHTMLAttributes />} />
-          <Route path="css" element={<ChapterCSS />} />
-          <Route path="css-selectors" element={<ChapterCSSSelectors />} />
-          <Route path="css-box-model" element={<ChapterCSSBoxModel />} />
-          <Route path="css-animations" element={<ChapterCSSAnimations />} />
-          <Route path="git" element={<ChapterGit />} />
-          <Route path="git-branches" element={<ChapterGitBranches />} />
-          <Route path="git-merges" element={<ChapterGitMerges />} />
-          <Route
-            path="git-merge-conflicts"
-            element={<ChapterGitMergeConflicts />}
-          />
-          <Route path="tipp-images" element={<ChapterCSSCenterImage />} />
-          <Route path="tipp-flexbox" element={<ChapterCSSLayout />} />
-          <Route path="img-background" element={<ChapterCSSImgBackground />} />
-          <Route
-            path="img-next-to-text"
-            element={<ChapterCSSImgNextToText />}
-          />
-          <Route
-            path="javascript"
-            element={<ChapterJavascriptIntroduction />}
-          />
-          <Route
-            path="javascript-change-page"
-            element={<ChapterJavascriptChangePage />}
-          />
-          <Route
-            path="javascript-text-to-numbers"
-            element={<ChapterJavascriptTextToNumbers />}
-          />
-          <Route path="javascript-if" element={<ChapterJavascriptIf />} />
-          <Route path="javascript-for" element={<ChapterJavascriptFor />} />
-          <Route
-            path="javascript-return"
-            element={<ChapterJavascriptReturn />}
-          />
-          <Route path="javascript-lists" element={<ChapterJavascriptLists />} />
-          <Route path="javascript-ascii" element={<ChapterJavascriptASCII />} />
-          <Route
-            path="javascript-switches"
-            element={<ChapterJavascriptSwitches />}
-          />
-          <Route path="ai-intro" element={<ChapterAIIntro />} />
-          <Route path="ai-pong" element={<ChapterAIPong />} />
-          <Route
-            path="javascript-objects"
-            element={<ChapterJavascriptObjects />}
-          />
-          <Route
-            path="javascript-objects-as-data"
-            element={<ChapterJavascriptObjectsAsData />}
-          />
-          <Route
-            path="javascript-binary-data"
-            element={<ChapterJavascriptBinary />}
-          />
-          <Route
-            path="javascript-hex-data"
-            element={<ChapterJavascriptHexadecimal />}
-          />
-        </Route>
-      </Routes>
+        <Routes>
+          {/* TODO: Change the layout to no longer use the nesting of the root
+           * This schould be easily possible, since we can place the <Routes> component
+           * anywhere we want, so we could keep the layout and the navbar static in our
+           * UI, and just change the rendered component.
+           */}
+          <Route path="/" element={<Layout />}>
+            <Route index element={<ChapterIndex />} />
+            <Route path="pres" element={<ChapterPres />} />
+            <Route path="install" element={<ChapterInstallation />} />
+            <Route path="html" element={<ChapterHTML />} />
+            <Route path="html-elements" element={<ChapterHTMLElements />} />
+            <Route path="html-attributes" element={<ChapterHTMLAttributes />} />
+            <Route path="css" element={<ChapterCSS />} />
+            <Route path="css-selectors" element={<ChapterCSSSelectors />} />
+            <Route path="css-box-model" element={<ChapterCSSBoxModel />} />
+            <Route path="css-animations" element={<ChapterCSSAnimations />} />
+            <Route path="git" element={<ChapterGit />} />
+            <Route path="git-branches" element={<ChapterGitBranches />} />
+            <Route path="git-merges" element={<ChapterGitMerges />} />
+            <Route
+              path="git-merge-conflicts"
+              element={<ChapterGitMergeConflicts />}
+            />
+            <Route path="tipp-images" element={<ChapterCSSCenterImage />} />
+            <Route path="tipp-flexbox" element={<ChapterCSSLayout />} />
+            <Route
+              path="img-background"
+              element={<ChapterCSSImgBackground />}
+            />
+            <Route
+              path="img-next-to-text"
+              element={<ChapterCSSImgNextToText />}
+            />
+            <Route
+              path="javascript"
+              element={<ChapterJavascriptIntroduction />}
+            />
+            <Route
+              path="javascript-change-page"
+              element={<ChapterJavascriptChangePage />}
+            />
+            <Route
+              path="javascript-text-to-numbers"
+              element={<ChapterJavascriptTextToNumbers />}
+            />
+            <Route path="javascript-if" element={<ChapterJavascriptIf />} />
+            <Route path="javascript-for" element={<ChapterJavascriptFor />} />
+            <Route
+              path="javascript-return"
+              element={<ChapterJavascriptReturn />}
+            />
+            <Route
+              path="javascript-lists"
+              element={<ChapterJavascriptLists />}
+            />
+            <Route
+              path="javascript-ascii"
+              element={<ChapterJavascriptASCII />}
+            />
+            <Route
+              path="javascript-switches"
+              element={<ChapterJavascriptSwitches />}
+            />
+            <Route path="ai-intro" element={<ChapterAIIntro />} />
+            <Route path="ai-pong" element={<ChapterAIPong />} />
+            <Route
+              path="javascript-objects"
+              element={<ChapterJavascriptObjects />}
+            />
+            <Route
+              path="javascript-objects-as-data"
+              element={<ChapterJavascriptObjectsAsData />}
+            />
+            <Route
+              path="javascript-binary-data"
+              element={<ChapterJavascriptBinary />}
+            />
+            <Route
+              path="javascript-hex-data"
+              element={<ChapterJavascriptHexadecimal />}
+            />
+          </Route>
+        </Routes>
       </Wrapper>
     </>
   )
 }
 
-function Wrapper({children}) {
-    const location = useLocation()
-    useLayoutEffect(() => {
-      window.scrollTo(0, 0)
-    }, [location.pathname])
-  return (
-    <>
-      {children}
-    </>
-  )
+function Wrapper({ children }) {
+  const location = useLocation()
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+  return <>{children}</>
 }
 
 function Layout() {
@@ -310,7 +320,9 @@ function ChapterIndex() {
               <Link to="javascript-objects">Objekte</Link>
             </li>
             <li>
-              <Link to="javascript-objects-as-data">Objekte as Datenquelle</Link>
+              <Link to="javascript-objects-as-data">
+                Objekte as Datenquelle
+              </Link>
             </li>
             <li>
               <Link to="javascript-binary-data">Binärsystem</Link>
