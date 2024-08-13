@@ -21,10 +21,55 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
     <TabsButton tabIndex="os-mac" label="MacOS" />
   </ul>
   <Tab className="show" tabIndex="os-mac">
-    Installationsanleitung für MacOS
+    Wenn Sie einen Mac haben, können Sie viele der Programme am einfachsten über `homebrew` installieren. Dafür müssen Sie aber zuerst `homebrew` selber installieren. Das geht ganz einfach wenn Sie mit `cmd + Space` eine Suche öffnen, und nach dem Programm `Terminal` suchen. Dann einfach den folgenden Befehl hineinkopieren und auf `Enter` drücken. Mehr Informationen zu `homebrew` finden Sie [hier](), falls Sie diese brauchen.
+
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
+    ### VSCode
+
+    Als erstes installieren wir VSCode. Das ist unser Editor den wir zum schreiben und editieren von Code verwenden werden. Um VSCode zu installieren, geben Sie den folgenden Befehl ein, und drücken Sie anschliessend auf `Enter`. Stellen Sie sicher das der Befehl richtig geschrieben ist, ansonsten wird es nicht funktionieren.
+
+    ```bash
+    brew install --cask visual-studio-code
+    ```
+
+    ### Git (Versionierungs-Werkzeug)
+
+    Wenn man Code schreibt, möchte man diesen immer in Versionen verwalten. Dafür gibt es das Werkzeug `git` dass Sie ganz einfach mit dem Befehl hier installieren können. Wir benötigen `git` auch um die Projektvorlagen zu bekommen und auch um diese abzugeben.
+
+    ```bash
+    brew install git
+    ```
+
+    ### Chrome (Webbrowser)
+
+    Wir werden sehr viel über die Webentwicklung lernen, daher brauchen wir einen Browser mit einem modernen Standart. Dafür können Sie `Chrome` verwenden, es gehen aber auch andere Browser wie Edge, Brave, Firefox etc. Getestet ist der ganze Code aber nur auf Browsern die auf der Chromium-Engine basieren. Das sollte aber keine Probleme machen. Chrome kann auch mit dem einfachen Befehl hier installiert werden.
+
+    ```bash
+    brew install --cask google-chrome
+    ```
+
+    ### Node.js (Javascript Runtime)
+
+    Wir werden später viel mit Javascript programmieren, dafür werden wir dann `nodejs` brauchen. Wir brauchen `nodejs` aber bereits jetzt um verschiedene Teile des Projektes zum laufen zu bringen. `Nodejs` kann am besten mit dem folgenden Befehl installiert werden.
+
+    ```bash
+    brew install node
+    ```
+
+    ### Docker-Desktop
+
+    `Docker` ist ein Werkzeug mit dem man Container erstellen und laufen lassen kann. Das hat den Vorteil dass wir auf verschiedenen Geräten die gleiche Umgebung in einem Container laufen lassen können, somit sollte nach der Installation von all diesen Werkzeugen bei allen alles funktionieren, zumindest wenn all diese Werkzeuge korrekt installiert wurden. `Docker` können Sie auch mit diesem Befehl installieren.
+
+    ```bash
+    brew install --cask docker
+    ```
+
   </Tab>
   <Tab className="hide" tabIndex="os-windows">
-    Am einfachsten geht die Instalation auf Windows mit dem Kommandozeilen-Befehl `winget`. Dafür müssen Sie ein neues Terminal öffnen. Das machen Sie am besten als Administrator, damit die Installation auch sicher funktioniert.
+    Am einfachsten geht die Installation auf Windows mit dem Kommandozeilen-Befehl `winget`. Dafür müssen Sie ein neues Terminal öffnen. Das machen Sie am besten als Administrator, damit die Installation auch sicher funktioniert.
 
     öffnen Sie das Startmenu und suchen Sie nach `cmd`. Mit einem Rechtsklick auf das Programm, können Sie dann `Als Administrator öffnen` auswählen. Dann sollte ein neues Fenster aufgehen, wo Sie Befehle ausführen können.
 
@@ -32,7 +77,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     Als erstes installieren wir VSCode. Das ist unser Editor den wir zum schreiben und editieren von Code verwenden werden. Um VSCode zu installieren, geben Sie den folgenden Befehl ein, und drücken Sie anschliessend auf `Enter`. Stellen Sie sicher das der Befehl richtig geschrieben ist, ansonsten wird es nicht funktionieren.
 
-    ```cmd
+    ```bash
     winget install -e --id Microsoft.VisualStudioCode
     ```
 
@@ -40,7 +85,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     Wenn man Code schreibt, möchte man diesen immer in Versionen verwalten. Dafür gibt es das Werkzeug `git` dass Sie ganz einfach mit dem Befehl hier installieren können. Wir benötigen `git` auch um die Projektvorlagen zu bekommen und auch um diese abzugeben.
 
-    ```cmd
+    ```bash
     winget install -e --id Git.Git
     ```
 
@@ -48,7 +93,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     Wir werden sehr viel über die Webentwicklung lernen, daher brauchen wir einen Browser mit einem modernen Standart. Dafür können Sie `Chrome` verwenden, es gehen aber auch andere Browser wie Edge, Brave, Firefox etc. Getestet ist der ganze Code aber nur auf Browsern die auf der Chromium-Engine basieren. Das sollte aber keine Probleme machen. Chrome kann auch mit dem einfachen Befehl hier installiert werden.
 
-    ```cmd
+    ```bash
     winget install -e --id Google.Chrome
     ```
 
@@ -56,7 +101,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     Wir werden später viel mit Javascript programmieren, dafür werden wir dann `nodejs` brauchen. Wir brauchen `nodejs` aber bereits jetzt um verschiedene Teile des Projektes zum laufen zu bringen. `Nodejs` kann am besten mit dem folgenden Befehl installiert werden.
 
-    ```cmd
+    ```bash
     winget install -e --id OpenJS.NodeJS
     ```
 
@@ -64,7 +109,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     `Docker` ist ein Werkzeug mit dem man Container erstellen und laufen lassen kann. Das hat den Vorteil dass wir auf verschiedenen Geräten die gleiche Umgebung in einem Container laufen lassen können, somit sollte nach der Installation von all diesen Werkzeugen bei allen alles funktionieren, zumindest wenn all diese Werkzeuge korrekt installiert wurden. `Docker` können Sie auch mit diesem Befehl installieren.
 
-    ```cmd
+    ```bash
     winget install -e --id Docker.DockerDesktop
     ```
 
