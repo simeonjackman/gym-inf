@@ -123,3 +123,14 @@ ol.nav {
 .right::before {
   content: "";
 }
+
+.hint {
+  width: clamp(460px, 60%, 720px);
+  margin: 0.5rem auto;
+  font-size: 0.9rem;
+  font-family: monospace;
+  background-color: rgba(196, 86, 66, 0.685);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 2px solid red;
+}
