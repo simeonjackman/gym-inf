@@ -1,6 +1,7 @@
 import Chapter from "../../components/Chapter"
 import Example from "../../components/Example"
 import Video from "../../components/Video"
+import { Tab, TabContainer, TabsButton } from "../../components/Tabs"
 
 <Chapter>
 
@@ -8,9 +9,35 @@ import Video from "../../components/Video"
 
 <section>
 
-In der Informatik arbeiten wir direkt auf dem eigenen Gerät auf lokalen Dateien.
-Dabei Arbeiten wir in kleinen Projekten, die jeweils in einem Ordner enthalten
-sind. Für diese Arbeitsweise brauchen wir 3 Programme:
+In der Informatik braucht es viele verschiedenen Werkzeuge um mit dem Computer
+und auch mit Code zu arbeiten. Diese Werkzeuge müssen zuerst installiert werden.
+Im folgenden Abschnitt finden Sie eine Installationsanleitung für Ihr
+Betriebssystem. Stellen Sie sicher dass Sie das richtige Betriebssystem
+ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
+
+<TabContainer>
+  <ul className="tabs">
+    <TabsButton isActive={true} tabIndex="os-windows" label="Windows" />
+    <TabsButton tabIndex="os-mac" label="MacOS" />
+  </ul>
+  <Tab className="show" tabIndex="os-mac">
+    Installationsanleitung für MacOS
+  </Tab>
+  <Tab className="hide" tabIndex="os-windows">
+    Am einfachsten geht die Instalation auf Windows mit dem Kommandozeilen-Befehl `winget`. Dafür müssen Sie ein neues Terminal öffnen. Das machen Sie am besten als Administrator, damit die Installation auch sicher funktioniert.
+
+    öffnen Sie das Startmenu und suchen Sie nach `cmd`. Mit einem Rechtsklick auf das Programm, können Sie dann `Als Administrator öffnen` auswählen. Dann sollte ein neues Fenster aufgehen, wo Sie Befehle ausführen können.
+
+    ### VSCode
+
+    Als erstes installieren wir VSCode. Das ist unser Editor den wir zum schreiben und editieren von Code verwenden werden. Um VSCode zu installieren, geben Sie den folgenden Befehl ein, und drücken Sie anschliessend auf `Enter`. Stellen Sie sicher das der Befehl richtig geschrieben ist, ansonsten wird es nicht funktionieren.
+
+    ```cmd
+    winget install -e --id Microsoft.VisualStudioCode
+    ```
+
+  </Tab>
+</TabContainer>
 
 1. <a href="https://code.visualstudio.com/Download">VS Code</a> (Texteditor)
 2. <a href="https://git-scm.com/downloads">Git</a> (Versionierungs-Werkzeug)
@@ -29,8 +56,8 @@ Installieren Sie die Programme über die jeweiligen Links.
 <section>
 
 Wenn Sie VS Code heruntergeladen haben, müssen Sie noch einige Plugins
-installieren. Öffnen Sie VS Code und drücken Sie <pre>CTRL + P</pre> und geben
-den folgenden Code, jeweils Zeile für Zeile ein:
+installieren. Öffnen Sie VS Code und drücken Sie `CTRL + P` und geben den
+folgenden Code, jeweils Zeile für Zeile ein:
 
 ```text
 ext install ritwickdey.LiveServer
@@ -45,8 +72,8 @@ ext install esbenp.prettier-vscode
 Ein Projekt sollte immer unter Versionskontrolle sein. Oftmals ist es auch
 möglich von einem bestehenden Projekt zu starten, und dann neue Versionen
 hinzuzufügen. Das geht viel einfacher als es klingt. Sie müssen nur ein neues
-Projekt mit <pre>Git</pre> klonen. Drücken Sie dazu <pre>SHIFT + CTRL + P</pre>
-und geben Sie <pre>klonen</pre> ein.
+Projekt mit `Git` klonen. Drücken Sie dazu `SHIFT + CTRL + P` und geben Sie
+`klonen` ein.
 
 Klonen Sie das folgende Projekt
 (<a href="https://github.com/gymmu/01-intro-websites">https://github.com/gymmu/01-intro-websites</a>)
@@ -54,12 +81,12 @@ in einen neuen Ordner, am besten auf Ihrem Desktop.
 
 Folgen Sie dabei am besten dem Video. Bei Unklarheiten bitte direkt fragen.
 
-<Video url="pZ9NPGK90YA" />
+{/* <Video url="pZ9NPGK90YA" /> */}
 
-Falls Sie in <pre>Git</pre> keinen commit machen können, folgen Sie der
-Anleitung in diesem Video.
+Falls Sie in `Git` keinen commit machen können, folgen Sie der Anleitung in
+diesem Video.
 
-<Video url="xRys4H_kTzI" />
+{/* <Video url="xRys4H_kTzI" /> */}
 
 <Example title="Auftrag: Eigene Webseite erstellen">
 
@@ -68,6 +95,7 @@ Webseite erstellen. Erstellen Sie jedes mal eine neue Version/Commit, wenn Sie
 eine Änderung gemacht haben, mit der Sie zufrieden sind.
 
 Was Sie alles in Webseiten einbinden können, finden Sie hier:
+
 <a href="#html">Webseiten</a>.
 
 </Example>
