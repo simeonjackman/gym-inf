@@ -7,6 +7,7 @@ import ChapterInstallation from "./sites/md/01-installation.mdx"
 import ChapterHTML from "./sites/md/02-0-html.mdx"
 import ChapterHTMLElements from "./sites/md/02-1-html-elements.mdx"
 import ChapterHTMLAttributes from "./sites/md/02-2-html-attributes.mdx"
+import ChapterSVG from "./sites/md/01-0-svg.mdx"
 import ChapterCSS from "./sites/md/03-0-css.mdx"
 import ChapterCSSSelectors from "./sites/md/03-1-css-selectors.mdx"
 import ChapterCSSBoxModel from "./sites/md/03-2-css-box-model.mdx"
@@ -52,6 +53,9 @@ export default function App() {
             <Route path="html" element={<ChapterHTML />} />
             <Route path="html-elements" element={<ChapterHTMLElements />} />
             <Route path="html-attributes" element={<ChapterHTMLAttributes />} />
+
+            <Route path="svg" element={<ChapterSVG />} />
+
             <Route path="css" element={<ChapterCSS />} />
             <Route path="css-selectors" element={<ChapterCSSSelectors />} />
             <Route path="css-box-model" element={<ChapterCSSBoxModel />} />
@@ -201,6 +205,14 @@ function ChapterIndex() {
             </li>
             <li>
               <Link to="html-attributes">HTML Attribute</Link>
+            </li>
+          </ol>
+        </li>
+        <li>
+          SVG
+          <ol>
+            <li>
+              <Link to="svg">Vektorgrafiken mit SVG</Link>
             </li>
           </ol>
         </li>
