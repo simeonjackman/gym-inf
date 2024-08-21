@@ -8,6 +8,9 @@ import ChapterHTML from "./sites/md/02-0-html.mdx"
 import ChapterHTMLElements from "./sites/md/02-1-html-elements.mdx"
 import ChapterHTMLAttributes from "./sites/md/02-2-html-attributes.mdx"
 import ChapterSVG from "./sites/md/01-0-svg.mdx"
+import ChapterSVGElements from "./sites/md/01-1-svg-elements.mdx"
+import ChapterSVGClipping from "./sites/md/01-2-svg-clipping.mdx"
+import ChapterSVGAnimation from "./sites/md/01-3-svg-animation.mdx"
 import ChapterCSS from "./sites/md/03-0-css.mdx"
 import ChapterCSSSelectors from "./sites/md/03-1-css-selectors.mdx"
 import ChapterCSSBoxModel from "./sites/md/03-2-css-box-model.mdx"
@@ -55,6 +58,9 @@ export default function App() {
             <Route path="html-attributes" element={<ChapterHTMLAttributes />} />
 
             <Route path="svg" element={<ChapterSVG />} />
+            <Route path="svg-elements" element={<ChapterSVGElements />} />
+            <Route path="svg-clipping" element={<ChapterSVGClipping />} />
+            <Route path="svg-animation" element={<ChapterSVGAnimation />} />
 
             <Route path="css" element={<ChapterCSS />} />
             <Route path="css-selectors" element={<ChapterCSSSelectors />} />
@@ -213,6 +219,15 @@ function ChapterIndex() {
           <ol>
             <li>
               <Link to="svg">Vektorgrafiken mit SVG</Link>
+            </li>
+            <li>
+              <Link to="svg-elements">Weitere SVG-Elemente</Link>
+            </li>
+            <li>
+              <Link to="svg-clipping">Elemente verbergen</Link>
+            </li>
+            <li>
+              <Link to="svg-animation">Elemente animieren</Link>
             </li>
           </ol>
         </li>
