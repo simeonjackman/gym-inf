@@ -2,13 +2,108 @@ import Chapter from "../../components/Chapter"
 import Example from "../../components/Example"
 import Video from "../../components/Video"
 
+import Presentation, { Slide, Fragment } from "../../components/Reveal"
+
 <Chapter>
 
 ## Versionskontrolle
 
+<section>
+
 Git ist ein Werkzeug das in der Softwareentwicklung - aber auch in anderen
 Bereichen - genutzt wird, um Versionen zu Verwalten und auch um gemeinsam an
 Projekten zu arbeiten.
+
+<Presentation>
+<Slide>
+## Versionskontrolle
+
+### Git
+
+</Slide>
+<Slide>
+### Wofür braucht man Versionskontrolle?
+
+<ul>
+<li class="fragment">Ein Werkzeug, mit dem man Schnappschüsse von einem Projekt machen kann</li>
+<li class="fragment">Ermöglicht Veränderungen am Projekt einfach Rückgängig zu machen</li>
+<li class="fragment">Verschiedene Versionen gleichzeitig bearbeiten</li>
+<li class="fragment">Zusammenarbeit in einem Team</li>
+</ul>
+    </Slide>
+    <Slide>
+      ### Wie funktioniert Versionskontrolle?
+      <ul>
+        <li class="fragment">`Commits` sind Schnappschüsse vom Projekt</li>
+        <li class="fragment">`Commits` werden in einem `Branch` angeordnet</li>
+        <li class="fragment">`Branches` haben Namen und Projekte werden in `Branches` entwickelt</li>
+        <li class="fragment">Von einem `Commit` aus, können mehrere `Branches` abzweigen</li>
+        <li class="fragment">Ein `Merge` ist das zusammenführen von 2 `Branches`</li>
+      </ul>
+    </Slide>
+    <Slide>
+      ### Der `main` Branch
+      <Fragment>
+        Dies ist der Hauptentwickungszweig von einem Projekt.
+      </Fragment>
+      <ul>
+        <li class="fragment">Auf dem `main` Branch wird **nicht** entwickelt</li>
+        <li class="fragment">Wichtige Veränderungen werden in den `main` Branch `gemerged`</li>
+        <li class="fragment">Wir arbeiten meistens in einem `aufgabe-0x` Branch</li> 
+      </ul>
+    </Slide>
+    <Slide>
+      ### Was ist ein `Commit`
+      <Fragment>
+      Ein `Commit` ist eine neue Version von unserem Projekt. Ein `Commit` wird immer dann erstellt, wenn ein Teil einer Aufgabe erledigt ist.
+      </Fragment>
+      <ul>
+        <li class="fragment">Sollte klein und alleinstehend sein</li>
+        <li class="fragment">Sollte oft gemacht werden, auch bei einfachen Aufgaben</li>
+        <li class="fragment">Bereits vor der Arbeit, sollte man wissen was erreicht werden soll</li>
+        <li class="fragment">Hat eine kurze klare Beschreibung für die Veränderung</li>
+      </ul>
+    </Slide>
+    <Slide>
+    ### Der `WIP-Commit`
+    <Fragment>
+      `WIP` steht für `work in progress` und wird verwendet um unvollständige `Commits` zu markieren.
+    </Fragment>
+    <ul>
+      <li class="fragment">Sollte nur selten vorkommen</li>
+      <li class="fragment">Wird oft Ende Lektion verwendet</li>
+      <li class="fragment">Kann verwendet werden, wenn man nicht weiter kommt</li>
+    </ul>
+    </Slide>
+    <Slide>
+      ### Verteilte Versionskontrolle
+      <Fragment>
+        `Git` ist in der Lage völlig lokal und unabhängig von anderen zu arbeiten, daher nennt man `Git` auch eine *verteilte* Versionskontrolle.
+      </Fragment>
+      <ul>
+        <li class="fragment">`Commits` können mit anderen geteilt werden</li>
+        <li class="fragment">`Commits` können lokal und unabhängig von anderen gemacht werden</li>
+        <li class="fragment">Die Entwicklung an einem `Branch` wird **nicht** geteilt</li>
+        <li class="fragment">Erst die Veränderungen im `main` Branch werden geteilt</li>
+      </ul>
+    </Slide>
+    <Slide>
+      ### `Branches` teilen
+      <Fragment>
+        Branches werden über ein Projekt/Repository auf einem `Remote` geteilt, wie zum Beispiel `Github`.
+      </Fragment>
+      <ul>
+        <li class="fragment">Geteilt wird über `Github` oder einen anderen `Remote`</li>
+        <li class="fragment">Wenn ein `Branch` geteilt wird, dann `pusht` man diesen auf den `Remote`</li>
+        <li class="fragment">In der Regel wird nur der `main` Branch `gepusht`</li>
+      </ul>
+    </Slide>
+    <Slide>
+      ### Was sind `Merges`?
+    </Slide>
+</Presentation>
+
+</section>
 
 ### Commit
 
