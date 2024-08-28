@@ -2,7 +2,11 @@ import Chapter from "../../components/Chapter"
 import Example from "../../components/Example"
 import Video from "../../components/Video"
 
-import Presentation, { Slide, Fragment } from "../../components/Reveal"
+import Presentation, {
+  Slide,
+  Fragment,
+  Basement,
+} from "../../components/Reveal"
 
 <Chapter>
 
@@ -33,6 +37,10 @@ Projekten zu arbeiten.
     </Slide>
     <Slide>
       ### Wie funktioniert Versionskontrolle?
+      <Basement>
+        <img alt="Git Graph" src="/git-graph.png" />
+      </Basement>
+      <Basement>
       <ul>
         <li class="fragment">`Commits` sind Schnappschüsse vom Projekt</li>
         <li class="fragment">`Commits` werden in einem `Branch` angeordnet</li>
@@ -40,6 +48,7 @@ Projekten zu arbeiten.
         <li class="fragment">Von einem `Commit` aus, können mehrere `Branches` abzweigen</li>
         <li class="fragment">Ein `Merge` ist das zusammenführen von 2 `Branches`</li>
       </ul>
+      </Basement>
     </Slide>
     <Slide>
       ### Der `main` Branch
