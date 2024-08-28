@@ -100,6 +100,39 @@ Projekten zu arbeiten.
     </Slide>
     <Slide>
       ### Was sind `Merges`?
+      <Fragment>
+        Bei einem `merge` werden 2 `Branches` zusammengeführt und es gibt eine neue Verion.
+      </Fragment>
+      <ul>
+        <li class="fragment">Meistens wird `aufgabe-0x` in den `main` Branch `gemergt`</li>
+        <li class="fragment">Bei einem `Merge` werden die Veränderungen immer zum aktuellen `Branch` hinzugezogen</li>
+        <li class="fragment">Meistens hat man den `main` Branch `ausgecheckt`, wenn man einen `Merge` macht.</li>
+      </ul>
+    </Slide>
+    <Slide>
+      ### Was ist `checkout`?
+      <Fragment>
+        Man kann in `Git` einen `Commit` oder `Branch` `auschecken`. Das ist dann die Version auf der man gerade arbeitet.
+      </Fragment>
+      <ul>
+        <li class="fragment">`Checkout` macht einen `commit` **aktiv**</li>
+        <li class="fragment">Was nicht zu diesem `Commit` gehört, wird nicht angezeigt</li>
+        <li class="fragment">Man möchte **immer** einen `Branch` `ausgecheckt` haben.</li>
+        <li class="fragment">Bei einem `Branch` ist immer der neuste `Commit` darauf `ausgecheckt`.</li>
+        <li class="fragment">Vor einem `Merge` muss zuerst der *Ziel*branch `ausgecheckt` werden</li>
+        <li class="fragment">Wenn alles klappt, wird nach einem `Merge` meist ein `Push` gemacht.</li>
+      </ul>
+    </Slide>
+    <Slide>
+      ### Mergekonflikte
+      <Fragment>
+        `Mergekonflikte` treten auf wenn in verschiedenen `Branches` an den gleichen Stellen der Code geändert wurde.
+      </Fragment>
+      <ul>
+        <li class="fragment">Sehr selten wenn man alleine arbeitet</li>
+        <li class="fragment">Muss jeweils von Hand gelöst werden</li>
+        <li class="fragment">Kann durch Absprache reduziert werden</li>
+      </ul>
     </Slide>
 </Presentation>
 
