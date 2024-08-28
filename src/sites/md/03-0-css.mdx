@@ -1,14 +1,123 @@
 import Chapter from "../../components/Chapter"
 import Example from "../../components/Example"
+import Fiddle from "../../components/Fiddle"
+import Presentation, {
+  Slide,
+  Fragment,
+  Basement,
+} from "../../components/Reveal"
 
 <Chapter>
 
 ## Webseiten gestalten
 
+<section>
+
+<Presentation>
+  <Slide>
+    <Basement>
+    ## `Klassen` in CSS
+      <ul>
+        <li class="fragment">
+          Eine `Klasse` in CSS ist ein Attribut, das wir einem `HTML`-Element
+          geben können.
+        </li>
+        <li class="fragment">
+          Bsp.: `<h1 class="important">Wichtiger Titel</h1>`
+        </li>
+        <li class="fragment">
+          Diese `Klasse` können wir in CSS auswählen, und die Gestaltung für das
+          Element anpassen.
+        </li>
+        <li class="fragment">
+          Bsp.: `h1 {
+            background-color: green;
+          }`
+        </li>
+      </ul>
+    </Basement>
+    <Basement>
+      <Fiddle
+        html={`<h1 class="my-title">Titel</h1>`}
+        css={`
+          .my-title {
+            background-color: green;
+          }
+        `}
+      />
+    </Basement>
+  </Slide>
+  <Slide>
+    <Basement>
+      ## Eigenschaften anpassen durch CSS
+      <ul>
+        <li class="fragment">Mit CSS setzen wir die Eigenschaften von einem
+        Element</li>
+        <li class="fragment">Der **Selektor** beschreibt welche Element gewählt
+        werden</li>
+        <li class="fragment">Die **Regeln** beschreiben wie der Browser das
+        Element zeichnet</li>
+        <li class="fragment">ACHTUNG! Ein Element kann auch von mehreren
+        Selektoren getroffen werden</li>
+        <li class="fragment">Wichtige Eigenschaften sind: `width, height,
+        background-color, margin, padding, border`</li>
+      </ul>
+    </Basement>
+    <Basement>
+    <Fiddle
+        html={`<div class="my-box">box</div>`}
+        css={`
+          .my-box {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            margin: 0px;
+            padding: 20px;
+            border: 2px dotted red;
+          }
+        `}
+      />
+    </Basement>
+  </Slide>
+   <Slide>
+    <Basement>
+      ## `Inline` vs `Block` vs `Flex`
+      <ul>
+        <li class="fragment">CSS unterschiedet verschiedene Arten von Display</li>
+        <li class="fragment">`Inline` werden Elemente aneinander gehängt</li>
+        <li class="fragment">`Block` ein Element braucht die volle Breite</li>
+        <li class="fragment">`Flex` Elemente darin können entlang einer Achse
+        ausgerichtet werden</li>
+        <li class="fragment">`<div>`-Elemente sollten immer als Container
+        verwendet werden</li>
+      </ul>
+    </Basement>
+    <Basement>
+    <Fiddle
+        html={`<div class="my-container">
+  <div class="my-box">box</div>
+</div>`}
+        css={`
+          .my-box {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            margin: 0px;
+            padding: 20px;
+            border: 2px dotted red;
+          }
+        `}
+      />
+    </Basement>
+  </Slide>
+</Presentation>
+
 Bisher haben wir uns mit der Struktur von Webseiten beschäftigt. Nun möchten wir
 diese Strukturen auch verwenden um die Webseiten zu gestalten. Dies wird mit
 
 <b>CSS</b> (Cascading Style Sheets) gemacht.
+
+</section>
 
 ### Stylesheet einbinden
 
