@@ -201,20 +201,6 @@ function ChapterIndex() {
           </ol>
         </li>
         <li>
-          HTML
-          <ol>
-            <li>
-              <Link to="html">Webseiten</Link>
-            </li>
-            <li>
-              <Link to="html-elements">Webseiten strukturieren</Link>
-            </li>
-            <li>
-              <Link to="html-attributes">HTML Attribute</Link>
-            </li>
-          </ol>
-        </li>
-        <li>
           SVG
           <ol>
             <li>
@@ -228,6 +214,20 @@ function ChapterIndex() {
             </li>
             <li>
               <Link to="svg-animation">Elemente animieren</Link>
+            </li>
+          </ol>
+        </li>
+        <li>
+          HTML
+          <ol>
+            <li>
+              <Link to="html">Webseiten</Link>
+            </li>
+            <li>
+              <Link to="html-elements">Webseiten strukturieren</Link>
+            </li>
+            <li>
+              <Link to="html-attributes">HTML Attribute</Link>
             </li>
           </ol>
         </li>
