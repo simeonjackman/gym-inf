@@ -336,17 +336,6 @@ function ChapterIndex() {
           </ol>
         </li>
         <li>
-          Künstliche Intelligenz
-          <ol>
-            <li>
-              <Link to="ai-intro">Arbeiten mit küstlicher Intelligenz</Link>
-            </li>
-            <li>
-              <Link to="ai-pong">Pong mit küstlicher Intelligenz</Link>
-            </li>
-          </ol>
-        </li>
-        <li>
           Javascript: Datenstrukturen
           <ol>
             <li>
