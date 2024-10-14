@@ -126,11 +126,70 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
 </section>
 
+## Github
+
+<section>
+  GitHub ist eine Plattform zur Versionsverwaltung und kollaborativen
+  Softwareentwicklung. Sie basiert auf dem Versionskontrollsystem Git und
+  ermöglicht es EntwicklerInnen, ihren Code zu speichern, gemeinsam daran zu
+  arbeiten und Änderungen nachzuverfolgen. Wir verwenden dieses Tool ab jetzt
+  für den Unterricht. Gehen Sie auf [github.com](https://github.com) und
+  erstellen Sie mit Ihrer Schul-E-Mailadresse einen Account.
+</section>
+
+## Mit `VSCode` umgehen
+
+`VSCode` ist unser Editor und das wichtigste Werkzeug das wir hier in der
+Informatik verwenden werden. Sie werden mit der Zeit lernen immer besser damit
+umzugehen. Für einen einfachen Einstieg, schauen Sie sich das folgende Video an.
+Das Video ist noch aus dem letzten Jahr und der Inhalt hat sich leicht geändert,
+Sie können dennoch einige Dinge davon übernehmen.
+
+<Example title="Auftrag">
+  Installieren Sie alle Programme die oben aufgezählt sind. Wenn Sie bereits
+  fertig sind, waren Sie etwas schneller als Ihre KlassenkameradInnen. Helfen
+  Sie Ihrem/Ihrer Banknachbar(in) gleich weit zu kommen. In ein paar Minuten
+  wird die Lehrperson folgende Punkte vorzeigen:
+  <ul>
+    <li>Ordnerstrukturen zum Programmieren</li>
+    <li>Ein Projekt Klonen</li>
+    <li>Ordnerstrukturen in einem Projekt</li>
+    <li>`CTRL + SHIFT P`</li>
+    <li>Eine Webseite ausführen: `npm run dev`</li>
+    <li>Eine Webseite anpassen</li>
+    <li>
+      git
+      <ul>
+        <li>diff</li>
+        <li>graph</li>
+        <li>Benutzer hinzufügen</li>
+        <li>staging</li>
+        <li>commit</li>
+      </ul>
+    </li>
+  </ul>
+</Example>
+
+## Webserver starten
+
+<section>
+
+Moderne Webseiten brauchen jeweils einen Webserver um zu funktionieren. Dafür
+verwenden wir `Docker` zusammen mit `nodejs`. Damit wir `Docker` direkt
+verwenden können, müssen wir eine **Erweiterung** in `VSCode` installieren.
+Drücken Sie dafür einfach `CTRL + SHIFT P` und kopieren Sie den folgenden Text
+in das Feld und drücken Sie `Enter`.
+
+```text
+ext install ms-vscode-remote.remote-containers
+```
+
+</section>
+
 <Example title="Auftrag">
 
-Installieren Sie alle Programme die oben aufgezählt sind. Wenn Sie alles
-installiert haben, öffnen Sie `VSCode` und erstellen Sie ein neues Projekt um zu
-testen ob alles richtig installiert ist.
+Wenn Sie alles installiert haben, öffnen Sie `VSCode` und erstellen Sie ein
+neues Projekt um zu testen ob alles richtig installiert ist.
 
 Drücken Sie dafür `CTRL + SHIFT + P` und tippen Sie `clone`. Wählen Sie dann
 `Git: Clone` aus, und klonen Sie das folgende Repository zu Ihnen auf den
@@ -157,48 +216,6 @@ anzuschauen, weil sie dort etwas schöner dargestellt wird. Dafür folgen Sie
 einfach diesem Link hier:
 [https://github.com/gymmu/00-demo.git](https://github.com/gymmu/00-demo.git) und
 scrollen ein wenig nach unten.
-
-</section>
-
-## Mit `VSCode` umgehen
-
-`VSCode` ist unser Editor und das wichtigste Werkzeug das wir hier in der
-Informatik verwenden werden. Sie werden mit der Zeit lernen immer besser damit
-umzugehen. Für einen einfachen Einstieg, schauen Sie sich das folgende Video an.
-Das Video ist noch aus dem letzten Jahr und der Inhalt hat sich leicht geändert,
-Sie können dennoch einige Dinge davon übernehmen.
-
-<Example title="Auftrag">
-  Schauen Sie sich das Video an, und versuchen Sie sich dann zu zweit in
-  `VSCode` zurechtzufinden. Bei Unklarheiten einfach Fragen.
-{/* Dieses Video erklärt wie das generelle Projektsetup funktioniert. Ist aber */}
-{/* veraltet, denn es arbeitet noch mit Live-Server, so wie wir es in 2023 */}
-{/* verwendet haben. */}
-<Video url="pZ9NPGK90YA" />
-
-</Example>
-
-## Webserver starten
-
-<section>
-
-Moderne Webseiten brauchen jeweils einen Webserver um zu funktionieren. Dafür
-verwenden wir `Docker` zusammen mit `nodejs`. Damit wir `Docker` direkt
-verwenden können, müssen wir eine **Erweiterung** in `VSCode` installieren.
-Drücken Sie dafür einfach `CTRL + P` und kopieren Sie den folgenden Text in das
-Feld und drücken Sie `Enter`.
-
-```text
-ext install ms-vscode-remote.remote-containers
-```
-
-Wenn die **Extension** erfolgreich installiert werden konnte, können Sie das
-Projekt in einem Container öffnen. Dafür klicken Sie `CTRL + SHIFT + P` und
-suchen nach dem Befehl `Reopen in Container`. Wenn Sie diesen Befehl ausführen,
-passieren ganz viele magische Dinge, und beim ersten Mal dauert das auch eine
-Weile. Wenn der ganze Prozess aber abgeschlossen ist, dann verwenden wir alle
-das genau gleiche Projekt-Setup und sollten dannach keine weiteren Probleme mehr
-haben.
 
 </section>
 
@@ -231,20 +248,16 @@ Resultat im Webbrowser an.
 <Example title="Auftrag: Erste Version">
   Herzlichen Glückwunsch! Mit dem Einfügen von Ihrem Namen, haben Sie die erste
   eigene Version von Ihrem Projekt erstellt. Das möchten wir auch so als Version
-  festhalten und mithilfe von `git` einen sogenannten `commit` erstellen. Folgen
-  Sie dafür am besten diesem Video. Auch dieses Video ist aus dem letzten Jahr
-  und nicht mehr ganz aktuell auf das Projekt zugeschnitten. Es sollte aber
-  dennoch alles wesentliche enthalten.
-
-{/* Dieses Video erklärt wie man den Benutzer bei git angibt. */}
-
-<Video url="xRys4H_kTzI" />
+  festhalten und mithilfe von `git` einen sogenannten `commit` erstellen.
+  Fügen Sie als erstes beim `git graph` Ihren Benutzer von Github ein, indem Sie auf das Einstellungssymbol (Zahnrad) drücken.
+  Stagen Sie dann die `index.html` Datei. Schreiben Sie eine `commit-message`und drücken Sie auf `Commit`.
 
 </Example>
 
 ## Weitere Aufgaben
 
-Sie finden im `README.md` weitere Aufgaben die Sie beim erstellen einer Webseite
-anleiten.
+Sie finden im
+[`README.md`](https://github.com/gymmu/00-demo/blob/main/README.md) weitere
+Aufgaben die Sie beim erstellen einer Webseite anleiten.
 
 </Chapter>
