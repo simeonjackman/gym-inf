@@ -7,6 +7,7 @@ import ChapterInstallation from "./sites/md/01-installation.mdx"
 import ChapterHTML from "./sites/md/02-0-html.mdx"
 import ChapterHTMLElements from "./sites/md/02-1-html-elements.mdx"
 import ChapterHTMLAttributes from "./sites/md/02-2-html-attributes.mdx"
+import ChapterSVGInstall from "./sites/md/01-0-svg-installation.mdx"
 import ChapterSVG from "./sites/md/01-0-svg.mdx"
 import ChapterSVGElements from "./sites/md/01-1-svg-elements.mdx"
 import ChapterSVGClipping from "./sites/md/01-2-svg-clipping.mdx"
@@ -57,6 +58,7 @@ export default function App() {
             <Route path="html-elements" element={<ChapterHTMLElements />} />
             <Route path="html-attributes" element={<ChapterHTMLAttributes />} />
 
+            <Route path="svg-install" element={<ChapterSVGInstall />} />
             <Route path="svg" element={<ChapterSVG />} />
             <Route path="svg-elements" element={<ChapterSVGElements />} />
             <Route path="svg-clipping" element={<ChapterSVGClipping />} />
@@ -203,6 +205,9 @@ function ChapterIndex() {
         <li>
           SVG
           <ol>
+            <li>
+              <Link to="svg-install">Installation</Link>
+            </li>
             <li>
               <Link to="svg">Vektorgrafiken mit SVG</Link>
             </li>
