@@ -45,7 +45,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     ### Chrome (Webbrowser)
 
-    Wir werden sehr viel über die Webentwicklung lernen, daher brauchen wir einen Browser mit einem modernen Standart. Dafür können Sie `Chrome` verwenden, es gehen aber auch andere Browser wie Edge, Brave, Firefox etc. Getestet ist der ganze Code aber nur auf Browsern die auf der Chromium-Engine basieren. Das sollte aber keine Probleme machen. Chrome kann auch mit dem einfachen Befehl hier installiert werden.
+    [**Falls nicht bereits intalliert**] Wir werden sehr viel über die Webentwicklung lernen, daher brauchen wir einen Browser mit einem modernen Standart. Dafür können Sie `Chrome` verwenden, es gehen aber auch andere Browser wie Edge, Brave, Firefox etc. Getestet ist der ganze Code aber nur auf Browsern die auf der Chromium-Engine basieren. Das sollte aber keine Probleme machen. Chrome kann auch mit dem einfachen Befehl hier installiert werden.
 
     ```bash
     brew install --cask google-chrome
@@ -67,6 +67,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
     ```bash
     brew install --cask docker
     ```
+    Wenn die Installation abgeschlossen ist, öffnen Sie die Applikation Docker und durchlaufen Sie den Setup-Prozess.
 
   </Tab>
   <Tab className="hide" tabIndex="os-windows">
@@ -98,7 +99,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     ### Chrome (Webbrowser)
 
-    Wir werden sehr viel über die Webentwicklung lernen, daher brauchen wir einen Browser mit einem modernen Standart. Dafür können Sie `Chrome` verwenden, es gehen aber auch andere Browser wie Edge, Brave, Firefox etc. Getestet ist der ganze Code aber nur auf Browsern die auf der Chromium-Engine basieren. Das sollte aber keine Probleme machen. Chrome kann auch mit dem einfachen Befehl hier installiert werden.
+    [**Falls nicht bereits intalliert**] Wir werden sehr viel über die Webentwicklung lernen, daher brauchen wir einen Browser mit einem modernen Standart. Dafür können Sie `Chrome` verwenden, es gehen aber auch andere Browser wie Edge, Brave, Firefox etc. Getestet ist der ganze Code aber nur auf Browsern die auf der Chromium-Engine basieren. Das sollte aber keine Probleme machen. Chrome kann auch mit dem einfachen Befehl hier installiert werden.
 
     ```bash
     winget install -e --id Google.Chrome
@@ -121,10 +122,28 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
     winget install -e --id Docker.DockerDesktop
     ```
 
+    Wenn die Installation abgeschlossen ist, öffnen Sie die Applikation Docker und durchlaufen Sie den Setup-Prozess.
+
   </Tab>
 </TabContainer>
 
 </section>
+
+### Dev Container
+
+<section>
+
+[Es kann sein, dass VSCode Sie fragt, ob Sie die Erweiterung `Dev Containers`
+installieren möchten. Wenn Sie dort auf ja drücken, können Sie diesen Abschnitt
+überspringen] Moderne Webseiten brauchen jeweils einen Webserver um zu
+funktionieren. Dafür verwenden wir `Docker` zusammen mit `nodejs`. Damit wir
+`Docker` direkt verwenden können, müssen wir eine **Erweiterung** in `VSCode`
+installieren. Drücken Sie dafür einfach `CTRL + SHIFT + P` und kopieren Sie den
+folgenden Text in das Feld und drücken Sie `Enter`.
+
+```text
+ext install ms-vscode-remote.remote-containers
+```
 
 ## Github
 
@@ -137,13 +156,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
   erstellen Sie mit Ihrer Schul-E-Mailadresse einen Account.
 </section>
 
-## Mit `VSCode` umgehen
-
-`VSCode` ist unser Editor und das wichtigste Werkzeug das wir hier in der
-Informatik verwenden werden. Sie werden mit der Zeit lernen immer besser damit
-umzugehen. Für einen einfachen Einstieg, schauen Sie sich das folgende Video an.
-Das Video ist noch aus dem letzten Jahr und der Inhalt hat sich leicht geändert,
-Sie können dennoch einige Dinge davon übernehmen.
+</section>
 
 <Example title="Auftrag">
   Installieren Sie alle Programme die oben aufgezählt sind. Wenn Sie bereits
@@ -154,7 +167,7 @@ Sie können dennoch einige Dinge davon übernehmen.
     <li>Ordnerstrukturen zum Programmieren</li>
     <li>Ein Projekt Klonen</li>
     <li>Ordnerstrukturen in einem Projekt</li>
-    <li>`CTRL + SHIFT P`</li>
+    <li>`CTRL + SHIFT + P`</li>
     <li>Eine Webseite ausführen: `npm run dev`</li>
     <li>Eine Webseite anpassen</li>
     <li>
@@ -170,22 +183,6 @@ Sie können dennoch einige Dinge davon übernehmen.
   </ul>
 </Example>
 
-## Webserver starten
-
-<section>
-
-Moderne Webseiten brauchen jeweils einen Webserver um zu funktionieren. Dafür
-verwenden wir `Docker` zusammen mit `nodejs`. Damit wir `Docker` direkt
-verwenden können, müssen wir eine **Erweiterung** in `VSCode` installieren.
-Drücken Sie dafür einfach `CTRL + SHIFT P` und kopieren Sie den folgenden Text
-in das Feld und drücken Sie `Enter`.
-
-```text
-ext install ms-vscode-remote.remote-containers
-```
-
-</section>
-
 <Example title="Auftrag">
 
 Wenn Sie alles installiert haben, öffnen Sie `VSCode` und erstellen Sie ein
@@ -193,7 +190,8 @@ neues Projekt um zu testen ob alles richtig installiert ist.
 
 Drücken Sie dafür `CTRL + SHIFT + P` und tippen Sie `clone`. Wählen Sie dann
 `Git: Clone` aus, und klonen Sie das folgende Repository zu Ihnen auf den
-Computer.
+Computer indem Sie den Link unten in das Feld kopieren. (Drücken Sie nicht auf
+`Clone from Github`, sondern kopieren Sie den Link in das leere Feld)
 
 ```text
 https://github.com/gymmu/00-demo.git
