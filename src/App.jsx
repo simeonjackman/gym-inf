@@ -4,6 +4,7 @@ import ICode from "./components/ICode"
 
 import ChapterPres from "./sites/md/00-pres.mdx"
 import ChapterInstallation from "./sites/md/01-installation.mdx"
+import ChapterIntro from "./sites/md/01-intro.mdx"
 import ChapterHTML from "./sites/md/02-0-html.mdx"
 import ChapterHTMLElements from "./sites/md/02-1-html-elements.mdx"
 import ChapterHTMLAttributes from "./sites/md/02-2-html-attributes.mdx"
@@ -54,6 +55,7 @@ export default function App() {
             <Route index element={<ChapterIndex />} />
             <Route path="pres" element={<ChapterPres />} />
             <Route path="install" element={<ChapterInstallation />} />
+            <Route path="intro" element={<ChapterIntro />} />
             <Route path="html" element={<ChapterHTML />} />
             <Route path="html-elements" element={<ChapterHTMLElements />} />
             <Route path="html-attributes" element={<ChapterHTMLAttributes />} />
@@ -199,6 +201,9 @@ function ChapterIndex() {
           <ol>
             <li>
               <Link to="install">Installation</Link>
+            </li>
+            <li>
+              <Link to="intro">Einführung</Link>
             </li>
           </ol>
         </li>
