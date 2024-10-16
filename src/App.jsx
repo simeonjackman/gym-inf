@@ -222,7 +222,7 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
-        <li>
+        {/* <li>
           HTML
           <ol>
             <li>
@@ -252,7 +252,7 @@ function ChapterIndex() {
               <Link to="css-animations">CSS Animationen</Link>
             </li>
           </ol>
-        </li>
+        </li> */}
         <li>
           Git
           <ol>
@@ -276,7 +276,7 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
-        <li>
+        {/* <li>
           Tipps und Tricks für HTML und CSS
           <ol>
             <li>
@@ -358,7 +358,7 @@ function ChapterIndex() {
               <Link to="javascript-hex-data">Hexadezimalsystem</Link>
             </li>
           </ol>
-        </li>
+        </li> */}
       </ol>
     </>
   )
