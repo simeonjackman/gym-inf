@@ -9,11 +9,11 @@ import { Tab, TabContainer, TabsButton } from "../../components/Tabs"
 
 <section>
 
-In der Informatik braucht es viele verschiedenen Werkzeuge um mit dem Computer
+In der Informatik braucht es viele verschiedenen Werkzeuge, um mit dem Computer
 und auch mit Code zu arbeiten. Diese Werkzeuge müssen zuerst installiert werden.
 Im folgenden Abschnitt finden Sie eine Installationsanleitung für Ihr
 Betriebssystem. Stellen Sie sicher dass Sie das richtige Betriebssystem
-ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
+ausgewählt haben, ansonsten können Sie die Installation nicht korrekt durchführen.
 
 <TabContainer>
   <ul className="tabs">
@@ -21,7 +21,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
     <TabsButton tabIndex="os-mac" label="MacOS" />
   </ul>
   <Tab className="show" tabIndex="os-mac">
-    Wenn Sie einen Mac haben, können Sie viele der Programme am einfachsten über `homebrew` installieren. Dafür müssen Sie aber zuerst `homebrew` selber installieren. Das geht ganz einfach wenn Sie mit `cmd + Space` eine Suche öffnen, und nach dem Programm `Terminal` suchen. Dann einfach den folgenden Befehl hineinkopieren und auf `Enter` drücken. Mehr Informationen zu `homebrew` finden Sie [hier](), falls Sie diese brauchen.
+    Wenn Sie einen Mac haben, können Sie viele der Programme am über `homebrew` installieren. Dafür müssen Sie aber zuerst `homebrew` selber installieren. Das geht ganz einfach wenn Sie mit `cmd + Space` eine Suche öffnen, und nach dem Programm `Terminal` suchen. Dann einfach den folgenden Befehl hineinkopieren und auf `Enter` drücken. Mehr Informationen zu `homebrew` finden Sie [hier](https://brew.sh/), falls Sie diese brauchen.
 
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -29,7 +29,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     ### VSCode
 
-    Als erstes installieren wir VSCode. Das ist unser Editor den wir zum schreiben und editieren von Code verwenden werden. Um VSCode zu installieren, geben Sie den folgenden Befehl ein, und drücken Sie anschliessend auf `Enter`. Stellen Sie sicher das der Befehl richtig geschrieben ist, ansonsten wird es nicht funktionieren.
+    Dann installieren wir VSCode. Das ist unser Editor, den wir zum Schreiben und Editieren von Code verwenden werden. Um VSCode zu installieren, geben Sie den folgenden Befehl ein, und drücken Sie anschliessend auf `Enter`. Stellen Sie sicher, dass der Befehl richtig geschrieben ist, ansonsten wird es nicht funktionieren.
 
     ```bash
     brew install --cask visual-studio-code
@@ -37,7 +37,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     ### Git (Versionierungs-Werkzeug)
 
-    Wenn man Code schreibt, möchte man diesen immer in Versionen verwalten. Dafür gibt es das Werkzeug `git` dass Sie ganz einfach mit dem Befehl hier installieren können. Wir benötigen `git` auch um die Projektvorlagen zu bekommen und auch um diese abzugeben.
+    Wenn man Code schreibt, möchte man diesen immer in Versionen verwalten. Dafür gibt es das Werkzeug `git` dass Sie ganz einfach mit dem folgenden Befehl installieren können. Wir benötigen `git` auch um die Projektvorlagen herunterzuladen und auch um diese abzugeben.
 
     ```bash
     brew install git
@@ -51,29 +51,20 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
     brew install --cask google-chrome
     ```
 
-    {/* ### Node.js (Javascript Runtime)
-
-    Wir werden später viel mit Javascript programmieren, dafür werden wir dann `nodejs` brauchen. Wir brauchen `nodejs` aber bereits jetzt um verschiedene Teile des Projektes zum laufen zu bringen. `Nodejs` kann am besten mit dem folgenden Befehl installiert werden.
-
-    ```bash
-    brew install node
-    ```
-    */}
-
     ### Docker-Desktop
 
-    `Docker` ist ein Werkzeug mit dem man Container erstellen und laufen lassen kann. Das hat den Vorteil dass wir auf verschiedenen Geräten die gleiche Umgebung in einem Container laufen lassen können, somit sollte nach der Installation von all diesen Werkzeugen bei allen alles funktionieren, zumindest wenn all diese Werkzeuge korrekt installiert wurden. `Docker` können Sie auch mit diesem Befehl installieren.
+    `Docker` ist ein Werkzeug mit dem man Container erstellen und laufen lassen kann. Das hat den Vorteil, dass wir auf verschiedenen Geräten mit verschiedenen Betriebssystemen die gleiche Umgebung in einem Container laufen lassen können. Somit sollten die Wekzeuge nach der Installation bei allen gleich funktionieren `Docker` können Sie auch mit diesem Befehl installieren.
 
     ```bash
     brew install --cask docker
     ```
-    Wenn die Installation abgeschlossen ist, öffnen Sie die Applikation Docker und durchlaufen Sie den Setup-Prozess.
+    Wenn die Installation abgeschlossen ist, öffnen Sie die Applikation Docker und durchlaufen Sie den Setup-Prozess. Starten Sie dann Ihren Computer neu.
 
   </Tab>
   <Tab className="hide" tabIndex="os-windows">
-    Am einfachsten geht die Installation auf Windows mit dem Kommandozeilen-Befehl `winget`. Dafür müssen Sie ein neues Terminal öffnen. Das machen Sie am besten als Administrator, damit die Installation auch sicher funktioniert.
+    Am einfachsten geht die Installation auf Windows mit dem Kommandozeilen-Befehl `winget`. Dafür müssen Sie eine neue Powershell öffnen. Das machen Sie am besten als Administrator, damit die Installation auch sicher funktioniert.
 
-    öffnen Sie das Startmenu und suchen Sie nach `powershell`. Mit einem Rechtsklick auf das Programm, können Sie dann `Als Administrator öffnen` auswählen. Dann sollte ein neues Fenster aufgehen, wo Sie Befehle ausführen können.
+    Öffnen Sie das Startmenu und suchen Sie nach `powershell`. Mit einem Rechtsklick auf das Programm, können Sie dann `Als Administrator öffnen` auswählen. Dann sollte ein neues Fenster aufgehen, wo Sie Befehle ausführen können.
 
     Damit Sie `winget` sicher haben, und dieses auch auf der neusten Version ist, können Sie den folgenden Befehl laufen lassen.
 
@@ -83,7 +74,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     ### VSCode
 
-    Als erstes installieren wir VSCode. Das ist unser Editor den wir zum schreiben und editieren von Code verwenden werden. Um VSCode zu installieren, geben Sie den folgenden Befehl ein, und drücken Sie anschliessend auf `Enter`. Stellen Sie sicher das der Befehl richtig geschrieben ist, ansonsten wird es nicht funktionieren.
+    Dann installieren wir VSCode. Das ist unser Editor, den wir zum Schreiben und Editieren von Code verwenden werden. Um VSCode zu installieren, geben Sie den folgenden Befehl ein, und drücken Sie anschliessend auf `Enter`. Stellen Sie sicher, dass der Befehl richtig geschrieben ist, ansonsten wird es nicht funktionieren.
 
     ```bash
     winget install -e --id Microsoft.VisualStudioCode
@@ -91,7 +82,7 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
 
     ### Git (Versionierungs-Werkzeug)
 
-    Wenn man Code schreibt, möchte man diesen immer in Versionen verwalten. Dafür gibt es das Werkzeug `git` dass Sie ganz einfach mit dem Befehl hier installieren können. Wir benötigen `git` auch um die Projektvorlagen zu bekommen und auch um diese abzugeben.
+    Wenn man Code schreibt, möchte man diesen immer in Versionen verwalten. Dafür gibt es das Werkzeug `git` dass Sie ganz einfach mit dem folgenden Befehl installieren können. Wir benötigen `git` auch um die Projektvorlagen herunterzuladen und auch um diese abzugeben.
 
     ```bash
     winget install -e --id Git.Git
@@ -105,24 +96,15 @@ ausgewählt haben, ansonsten können Sie die Installation garnicht durchführen.
     winget install -e --id Google.Chrome
     ```
 
-    {/* ### Node.js (Javascript Runtime)
-
-    Wir werden später viel mit Javascript programmieren, dafür werden wir dann `nodejs` brauchen. Wir brauchen `nodejs` aber bereits jetzt um verschiedene Teile des Projektes zum laufen zu bringen. `Nodejs` kann am besten mit dem folgenden Befehl installiert werden.
-
-    ```bash
-    winget install -e --id OpenJS.NodeJS
-    ```
-    */}
-
     ### Docker-Desktop
 
-    `Docker` ist ein Werkzeug mit dem man Container erstellen und laufen lassen kann. Das hat den Vorteil dass wir auf verschiedenen Geräten die gleiche Umgebung in einem Container laufen lassen können, somit sollte nach der Installation von all diesen Werkzeugen bei allen alles funktionieren, zumindest wenn all diese Werkzeuge korrekt installiert wurden. `Docker` können Sie auch mit diesem Befehl installieren.
+    `Docker` ist ein Werkzeug mit dem man Container erstellen und laufen lassen kann. Das hat den Vorteil, dass wir auf verschiedenen Geräten mit verschiedenen Betriebssystemen die gleiche Umgebung in einem Container laufen lassen können. Somit sollten die Wekzeuge nach der Installation bei allen gleich funktionieren `Docker` können Sie auch mit diesem Befehl installieren.
 
     ```bash
     winget install -e --id Docker.DockerDesktop
     ```
 
-    Wenn die Installation abgeschlossen ist, öffnen Sie die Applikation Docker und durchlaufen Sie den Setup-Prozess.
+    Wenn die Installation abgeschlossen ist, öffnen Sie die Applikation Docker und durchlaufen Sie den Setup-Prozess. Starten Sie dann Ihren Computer neu.
 
   </Tab>
 </TabContainer>
