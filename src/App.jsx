@@ -227,7 +227,7 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
-        {/* <li>
+        <li>
           HTML
           <ol>
             <li>
@@ -257,7 +257,7 @@ function ChapterIndex() {
               <Link to="css-animations">CSS Animationen</Link>
             </li>
           </ol>
-        </li> */}
+        </li>
         <li>
           Git
           <ol>
