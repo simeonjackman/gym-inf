@@ -281,7 +281,7 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
-        {/* <li>
+        <li>
           Tipps und Tricks für HTML und CSS
           <ol>
             <li>
@@ -298,6 +298,7 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
+        {/* 
         <li>
           Javascript
           <ol>
