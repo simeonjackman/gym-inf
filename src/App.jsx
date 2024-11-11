@@ -4,6 +4,7 @@ import ICode from "./components/ICode"
 
 import ChapterInstallation from "./sites/md/01-installation.mdx"
 import ChapterIntro from "./sites/md/01-intro.mdx"
+import ChapterProjekt from "./sites/md/01-project.mdx"
 import ChapterHTML from "./sites/md/02-0-html.mdx"
 import ChapterHTMLElements from "./sites/md/02-1-html-elements.mdx"
 import ChapterHTMLAttributes from "./sites/md/02-2-html-attributes.mdx"
@@ -46,7 +47,7 @@ export default function App() {
       <Wrapper>
         <Routes>
           {/* TODO: Change the layout to no longer use the nesting of the root
-           * This schould be easily possible, since we can place the <Routes> component
+           * This should be easily possible, since we can place the <Routes> component
            * anywhere we want, so we could keep the layout and the navbar static in our
            * UI, and just change the rendered component.
            */}
@@ -54,6 +55,7 @@ export default function App() {
             <Route index element={<ChapterIndex />} />
             <Route path="install" element={<ChapterInstallation />} />
             <Route path="intro" element={<ChapterIntro />} />
+            <Route path="project" element={<ChapterProjekt />} />
             <Route path="html" element={<ChapterHTML />} />
             <Route path="html-elements" element={<ChapterHTMLElements />} />
             <Route path="html-attributes" element={<ChapterHTMLAttributes />} />
@@ -202,6 +204,9 @@ function ChapterIndex() {
             </li>
             <li>
               <Link to="intro">Einführung</Link>
+            </li>
+            <li>
+              <Link to="project">Webseiten Projekt</Link>
             </li>
           </ol>
         </li>
