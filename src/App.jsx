@@ -2,7 +2,6 @@ import { Routes, Route, Link, Outlet, useLocation } from "react-router-dom"
 import { useEffect, useRef, useLayoutEffect } from "react"
 import ICode from "./components/ICode"
 
-import ChapterPres from "./sites/md/00-pres.mdx"
 import ChapterInstallation from "./sites/md/01-installation.mdx"
 import ChapterIntro from "./sites/md/01-intro.mdx"
 import ChapterHTML from "./sites/md/02-0-html.mdx"
@@ -53,7 +52,6 @@ export default function App() {
            */}
           <Route path="/" element={<Layout />}>
             <Route index element={<ChapterIndex />} />
-            <Route path="pres" element={<ChapterPres />} />
             <Route path="install" element={<ChapterInstallation />} />
             <Route path="intro" element={<ChapterIntro />} />
             <Route path="html" element={<ChapterHTML />} />
