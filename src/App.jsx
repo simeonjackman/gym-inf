@@ -267,6 +267,7 @@ function ChapterIndex() {
             <li>
               <Link to="git">Versionskontrolle</Link>
             </li>
+            {/* 
             <li>
               <Link to="git-branches">
                 Versionszweige (<ICode>branch</ICode>es)
@@ -281,7 +282,9 @@ function ChapterIndex() {
               <Link to="git-merge-conflicts">
                 <ICode>merge</ICode>-Konflikte
               </Link>
+              
             </li>
+            */}
           </ol>
         </li>
         <li>
