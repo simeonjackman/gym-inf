@@ -211,6 +211,32 @@ function ChapterIndex() {
           </ol>
         </li>
         <li>
+          Git
+          <ol>
+            <li>
+              <Link to="git">Versionskontrolle</Link>
+            </li>
+            {/* 
+            <li>
+              <Link to="git-branches">
+                Versionszweige (<ICode>branch</ICode>es)
+              </Link>
+            </li>
+            <li>
+              <Link to="git-merges">
+                Versionen zusammenführen (<ICode>merge</ICode>)
+              </Link>
+            </li>
+            <li>
+              <Link to="git-merge-conflicts">
+                <ICode>merge</ICode>-Konflikte
+              </Link>
+              
+            </li>
+            */}
+          </ol>
+        </li>
+        <li>
           SVG
           <ol>
             <li>
@@ -259,32 +285,6 @@ function ChapterIndex() {
             <li>
               <Link to="css-animations">CSS Animationen</Link>
             </li>
-          </ol>
-        </li>
-        <li>
-          Git
-          <ol>
-            <li>
-              <Link to="git">Versionskontrolle</Link>
-            </li>
-            {/* 
-            <li>
-              <Link to="git-branches">
-                Versionszweige (<ICode>branch</ICode>es)
-              </Link>
-            </li>
-            <li>
-              <Link to="git-merges">
-                Versionen zusammenführen (<ICode>merge</ICode>)
-              </Link>
-            </li>
-            <li>
-              <Link to="git-merge-conflicts">
-                <ICode>merge</ICode>-Konflikte
-              </Link>
-              
-            </li>
-            */}
           </ol>
         </li>
         <li>
