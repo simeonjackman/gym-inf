@@ -322,6 +322,7 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
+        {/* 
         <li>
           Javascript: Logik
           <ol>
@@ -351,7 +352,7 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
-        {/* 
+        
         <li>
           Javascript: Datenstrukturen
           <ol>
