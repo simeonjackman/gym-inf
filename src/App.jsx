@@ -189,12 +189,12 @@ function Layout() {
 function ChapterIndex() {
   return (
     <>
-      <div class="hint">
+      {/* <div class="hint">
         ACHTUNG: Diese Webseite ist unter aktiver Entwicklung. Informationen
         können von einem Tag auf den nächsten ändern. Wenn Sie eine Information
         von der Webseite brauchen, dann machen Sie ein Screenshot davon, und
         speichern diesen für sich ab.
-      </div>
+      </div> */}
       <ol className="nav">
         <li>
           Einführung
