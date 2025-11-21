@@ -236,7 +236,7 @@ function ChapterIndex() {
             */}
           </ol>
         </li>
-        <li>
+        {/* <li>
           SVG
           <ol>
             <li>
@@ -255,7 +255,7 @@ function ChapterIndex() {
               <Link to="svg-animation">Elemente animieren</Link>
             </li>
           </ol>
-        </li>
+        </li> */}
         <li>
           HTML
           <ol>
@@ -322,7 +322,6 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
-        {/* 
         <li>
           Javascript: Logik
           <ol>
@@ -352,7 +351,7 @@ function ChapterIndex() {
             </li>
           </ol>
         </li>
-        
+
         <li>
           Javascript: Datenstrukturen
           <ol>
@@ -371,7 +370,7 @@ function ChapterIndex() {
               <Link to="javascript-hex-data">Hexadezimalsystem</Link>
             </li>
           </ol>
-        </li> */}
+        </li>
       </ol>
     </>
   )
