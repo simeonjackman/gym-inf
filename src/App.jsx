@@ -5,6 +5,7 @@ import ICode from "./components/ICode"
 import ChapterInstallation from "./sites/md/01-installation.mdx"
 import ChapterIntro from "./sites/md/01-intro.mdx"
 import ChapterProjekt from "./sites/md/01-project.mdx"
+import ChapterVSCode from "./sites/md/01-vs-code.mdx"
 import ChapterHTML from "./sites/md/02-0-html.mdx"
 import ChapterHTMLElements from "./sites/md/02-1-html-elements.mdx"
 import ChapterHTMLAttributes from "./sites/md/02-2-html-attributes.mdx"
@@ -56,6 +57,7 @@ export default function App() {
             <Route path="install" element={<ChapterInstallation />} />
             <Route path="intro" element={<ChapterIntro />} />
             <Route path="project" element={<ChapterProjekt />} />
+            <Route path="vs-code" element={<ChapterVSCode />} />
             <Route path="html" element={<ChapterHTML />} />
             <Route path="html-elements" element={<ChapterHTMLElements />} />
             <Route path="html-attributes" element={<ChapterHTMLAttributes />} />
@@ -203,10 +205,10 @@ function ChapterIndex() {
               <Link to="install">Installation</Link>
             </li>
             <li>
-              <Link to="intro">Einführung</Link>
+              <Link to="project">Webseiten Projekt</Link>
             </li>
             <li>
-              <Link to="project">Webseiten Projekt</Link>
+              <Link to="vs-code">VS Code Tipps</Link>
             </li>
           </ol>
         </li>
@@ -259,6 +261,9 @@ function ChapterIndex() {
         <li>
           HTML
           <ol>
+            <li>
+              <Link to="intro">Einführung</Link>
+            </li>
             <li>
               <Link to="html">Webseiten</Link>
             </li>
