@@ -3,7 +3,7 @@ import { useEffect, useRef, useLayoutEffect } from "react"
 import ICode from "./components/ICode"
 
 import ChapterInstallation from "./sites/md/01-installation.mdx"
-import ChapterIntro from "./sites/md/01-intro.mdx"
+import ChapterIntro from "./sites/md/02-intro.mdx"
 import ChapterProjekt from "./sites/md/01-project.mdx"
 import ChapterVSCode from "./sites/md/01-vs-code.mdx"
 import ChapterHTML from "./sites/md/02-0-html.mdx"

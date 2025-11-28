@@ -1,0 +1,74 @@
+import Chapter from "../../components/Chapter"
+import Example from "../../components/Example"
+import { Tab, TabContainer, TabsButton } from "../../components/Tabs"
+
+<Chapter>
+
+## HTML, eine XML basierte Sprache
+
+<section>
+
+XML-basierte Sprachen sind Markup-Sprachen, die auf dem Extensible Markup
+Language (XML) basieren. Sie dienen dazu, strukturierte Daten in einer klar
+definierten, hierarchischen Form darzustellen, was sie besonders für die
+Darstellung von Informationen im Web geeignet macht. In den nächsten Wochen
+lernen Sie eine XML-basierte Sprache: HTML (Hypertext Markup Language).
+
+XML-basierte Sprachen sind hierarchisch organisiert, was bedeutet, dass
+Informationen in einer Baumstruktur dargestellt werden. Jedes Element kann
+untergeordnete Elemente enthalten. Diese Verschachtelung ermöglicht eine klare
+Organisation der Daten und erleichtert die Verarbeitung.
+
+</section>
+<section>
+
+### HTML Elemente
+
+Elemente werden in Tags definiert, welche folgende Struktur besitzen: `<tag>`.
+Der Inhalt wird immer von einem öffnenden (`<tag>`) und einem schliessenden Tag
+(`</tag>`) eingeschlossen. Wobei Sie Tags beliebig oft verschachteln können:
+
+```html
+<html>
+  <p>
+    <ol>
+      <li> Eintrag eins </li>
+      <li> Eintrag zwei </li>
+    </ol>
+  </p>
+</html>
+```
+
+Im Gegensatz zu Python oder Jython ist die Einrückung zwar nicht relevant. wird
+aber oft trotzdem verwendet, um die Lesbarkeit zu verbessern.
+
+### HTML Attribute
+
+Ein HTML Element kann zusätzlich zum Namen (wie `p` oder `li`) auch zusätzliche
+Informationen in Form von Attributen besitzen. Attribute werden immer im
+öffnenden Tag definiert und bestehen aus einem Namen und einem Wert.
+
+Also Beispielsweise bei einem Link. Ein Link wird in HTML durch ein `a` Element
+angegeben. Bei einem Link müssen wir aber noch sage, wo es hingehen soll. Dafür
+verwendet man das Attribut mit dem Namen `href`.
+
+```html
+<html>
+  <a href="https://www.gym-muttenz.ch">das ist der angezeigte Name des Links</a>
+</html>
+```
+
+Der Code oben würde auf einer Webseite so aussehen:
+
+<a href="https://www.gym-muttenz.ch">das ist der angezeigte Name des Links</a>
+
+Mehr Informationen zu Attributen finden Sie auf folgdem Link.
+
+<a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">
+  w3schools: HTML Attributes
+</a>
+.
+
+</section>
+
+</Chapter>
