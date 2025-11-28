@@ -368,12 +368,12 @@ function ChapterIndex() {
                 Objekte as Datenquelle
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="javascript-binary-data">Binärsystem</Link>
             </li>
             <li>
               <Link to="javascript-hex-data">Hexadezimalsystem</Link>
-            </li>
+            </li> */}
           </ol>
         </li>
       </ol>
