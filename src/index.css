@@ -134,3 +134,9 @@ ol.nav {
   border-radius: 0.5rem;
   border: 2px solid red;
 }
+
+.centering {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
